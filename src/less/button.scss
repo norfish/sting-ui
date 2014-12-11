@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.btn{
+	@include inline-block;
+	font-size: 14px;
+	padding: 0 15px;
+	height: 32px;
+	line-height: 32px;
+	background-color: $color-default;
+	color: #FFF;
+	border: solid 0 transparent;
+	border-radius: $btn-radius;
+	box-shadow: 2px 2px 3px #eee;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	background-image: none; /*Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214*/
+	/*Reset the extra padding in ie button element*/
+	width: auto;
+	overflow: visible;
+}
+
+.btn:hover, .btn-hover{
+	text-decoration: none;
+	background-color: #e55b00;
+}
+
+.btn:active, .btn-active{
+	text-decoration: none;
+	background-color: #db5700;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.btn:disabled, .btn-dis{
+	text-decoration: none;
+	background-color: #999;
+	pointer-events: none;
+}
+
+.btn-blue{
+	@include btn-variant($font-color-white, $color-blue, $btn-radius);
+}
+
+.btn-orange{
+	@include btn-variant($font-color-white, $color-orange, $btn-radius);
+}
+
+.btn-teal{
+	@include btn-variant($font-color-white, $color-teal, $btn-radius);
+}
+
+.btn-green{
+	@include btn-variant($font-color-white, $color-green, $btn-radius);
+}
+
+.btn-green-light{
+	@include btn-variant($font-color-white, $color-green-light, $btn-radius);
+}
+
+.btn-red{
+	@include btn-variant($font-color-white, $color-red, $btn-radius);
+}
+
+.btn-black{
+	@include btn-variant($font-color-white, $color-black, $btn-radius);
+}

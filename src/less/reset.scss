@@ -1,0 +1,144 @@
+/*
+** Css Reset
+** Version: 3.0.0
+** Author Joy Du(飘零雾雨)
+** Edit at 2012.3.1
+*/
+
+/* 防止用户自定义网页背景及文字颜色、大小影响 */
+html{
+    background:#fff;
+    color:#333;
+    font-size:12px;
+}
+/* 清除某些元素在不同浏览器下内外补白不同造成的影响 */
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,figure,form,fieldset,legend,input,textarea,button,p,blockquote,th,td,pre,xmp{
+    margin:0;
+    padding:0;
+}
+/* 设置默认字集及行高，表单及某些特殊元素不继承祖先font相关属性 */
+body,input,textarea,button,select,pre,tt,code,kbd,samp,optgroup,option{
+    line-height:1.5;
+    font-family:arial, '\5b8b\4f53', '\5fae\8f6f\96c5\9ed1', verdana, helvetica, sans-serif;
+}
+/* 清除单元格边距并让边框合并 */
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    text-align:left;
+}
+/* 设置caption继承父元素的对齐方式，同时修复IE下th不继承父元素对齐方式bug */
+caption,th{
+    text-align:inherit;
+    font-weight:400;
+}
+/* 清除列表默认序号 */
+ul,ol,menu{
+    list-style:none;
+}
+/* 清除默认边框 */
+fieldset,img{
+    border:0 none;
+}
+/* 设置某些元素居中对齐 */
+img,object,input,textarea,button,select{
+    vertical-align:middle;
+}
+/* 设置某些HTML5元素为块元素 */
+article,aside,footer,header,section,nav,figure,figcaption,hgroup,details,menu{
+    display:block;
+}
+/* 设置HTML5新增媒体元素与img,object保持一致 */
+audio,canvas,video{
+    display:block;
+    *display:inline;
+    *zoom:1;
+}
+/* 清除某些元素不继承祖先元素font-size的影响 */
+h1,h2,h3,h4,h5,h6,input,textarea,button,select,small{
+    font-size:100%;
+}
+
+h1 {
+    font-size:3em;
+}
+h2 {
+    font-size:2em;
+}
+h3 {
+    font-size:1.8em;
+}
+h4 {
+    font-size:1.6em;
+}
+h5 {
+    font-size:1.4em;
+}
+h6 {
+    font-size:1.2em;
+}
+/* 将呈现为斜体的元素重置为正常文本 */
+address,cite,dfn,em,i,optgroup,var{
+    font-style:normal;
+}
+/* 清除引用元素的默认派生标识 */
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'\0020';
+}
+/* 设置文本域滚动条需要时才出现 */
+textarea{
+    overflow:auto;
+}
+/* 清除webkit下文本域的outline */
+textarea,input{
+    outline:none;
+}
+/* 设置mark元素有默认背景色 */
+mark{
+    background-color:#ffc40d;
+}
+/* 清除文本线条装饰 */
+ins,s,u,del{
+    text-decoration:none;
+}
+/* 预设默认链接表现 */
+a{
+    color:#0069ca;
+    text-decoration:none;
+}
+a:hover{
+    color:#f60;
+}
+.rmb{ font-weight:normal; font-size:12px; font-family:arial; }
+.num{ font-family:Tahoma,Simsum; }
+.color01{ color:#ff075b; }
+
+/* 预设清除浮动 */
+#hd,
+#bd,
+#ft,
+.hd,
+.bd,
+.ft,
+.g-clear,
+.g-mod,
+.g-mod .inner,
+.clear{
+    *zoom:1;
+}
+#hd:after,
+#bd:after,
+#ft:after,
+.hd:after,
+.bd:after,
+.ft:after,
+.g-clear:after,
+.g-mod:after,
+.g-mod .inner:after,
+.clear:after{
+    display:block;
+    overflow:hidden;
+    height:0;
+    clear:both;
+    content:'\0020';
+}
