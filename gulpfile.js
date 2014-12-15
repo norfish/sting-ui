@@ -8,8 +8,8 @@ var $ = require('gulp-load-plugins')();
 
 var sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('less', function() {
-	return gulp.src('./src/less/**/ziro.scss')
+gulp.task('scss', function() {
+	return gulp.src('./src/scss/**/flag.scss')
 	  .pipe(sourcemaps.init())
 	  .pipe($.sass())
 	  .pipe(sourcemaps.write())
@@ -32,7 +32,7 @@ gulp.task('clean', function () {
   return gulp.src(['.tmp', 'build'], { read: false }).pipe($.clean());
 });
 
-gulp.task('build', ['less']);
+gulp.task('build', ['scss']);
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
@@ -41,5 +41,5 @@ gulp.task('default', ['clean'], function () {
 gulp.task('watch', function () {
   var server = $.livereload();
 
-  gulp.watch('./src/less/**/*.less', ['less']);
+  gulp.watch('./src/scss/**/*.scss', ['scss']);
 });

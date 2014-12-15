@@ -1,0 +1,655 @@
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+/**
+* Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+/* line 22, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/**
+* Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+/* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/**
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+/* line 43, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+* Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+* Known issue: no IE 6 support.
+*/
+/* line 53, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+Base
+========================================================================== */
+/**
+* 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevent iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+/* line 68, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+* Address `font-family` inconsistency between `textarea` and other form
+* elements.
+*/
+/* line 83, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+/**
+* Address margins handled incorrectly in IE 6/7.
+*/
+/* line 91, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+Links
+========================================================================== */
+/**
+* Address `outline` inconsistency between Chrome and other browsers.
+*/
+/* line 103, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+a:focus {
+  outline: thin dotted; }
+
+/**
+* Improve readability when focused and also mouse hovered in all browsers.
+*/
+/* line 112, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+Typography
+========================================================================== */
+/**
+* Address font sizes and margins set differently in IE 6/7.
+* Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+* and Chrome.
+*/
+/* line 126, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 131, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+/* line 136, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+/* line 141, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+/* line 146, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+/* line 151, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0; }
+
+/**
+* Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+*/
+/* line 160, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+* Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+*/
+/* line 169, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 173, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+blockquote {
+  margin: 1em 40px; }
+
+/**
+* Address styling not present in Safari 5 and Chrome.
+*/
+/* line 181, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+dfn {
+  font-style: italic; }
+
+/**
+* Address differences between Firefox and other browsers.
+* Known issue: no IE 6/7 normalization.
+*/
+/* line 190, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+* Address styling not present in IE 6/7/8/9.
+*/
+/* line 200, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+* Address margins set differently in IE 6/7.
+*/
+/* line 210, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+p, pre {
+  margin: 1em 0; }
+
+/**
+* Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+*/
+/* line 221, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/**
+* Improve readability of pre-formatted text in all browsers.
+*/
+/* line 231, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/**
+* Address CSS quotes not supported in IE 6/7.
+*/
+/* line 241, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+q {
+  quotes: none; }
+
+/**
+* Address `quotes` property not supported in Safari 4.
+*/
+/* line 250, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/**
+* Address inconsistent and variable font size in all browsers.
+*/
+/* line 259, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+small {
+  font-size: 80%; }
+
+/**
+* Prevent `sub` and `sup` affecting `line-height` in all browsers.
+*/
+/* line 268, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 275, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+sup {
+  top: -0.5em; }
+
+/* line 279, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+Lists
+========================================================================== */
+/**
+* Address margins set differently in IE 6/7.
+*/
+/* line 294, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+dl, menu, ol, ul {
+  margin: 1em 0; }
+
+/* line 298, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+dd {
+  margin: 0 0 0 40px; }
+
+/**
+* Address paddings set differently in IE 6/7.
+*/
+/* line 308, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+menu, ol, ul {
+  padding: 0 0 0 40px; }
+
+/**
+* Correct list images handled incorrectly in IE 7.
+*/
+/* line 317, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* ==========================================================================
+Embedded content
+========================================================================== */
+/**
+* 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+* 2. Improve image quality when scaled in IE 7.
+*/
+/* line 331, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/**
+* Correct overflow displayed oddly in IE 9.
+*/
+/* line 340, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+Figures
+========================================================================== */
+/**
+* Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+*/
+/* line 352, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+Forms
+========================================================================== */
+/**
+* Correct margin displayed oddly in IE 6/7.
+*/
+/* line 364, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+form {
+  margin: 0; }
+
+/**
+* Define consistent border, margin, and padding.
+*/
+/* line 372, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+* 1. Correct color not being inherited in IE 6/7/8/9.
+* 2. Correct text not wrapping in Firefox 3.
+* 3. Correct alignment displayed oddly in IE 6/7.
+*/
+/* line 384, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/**
+* 1. Correct font size not being inherited in all browsers.
+* 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+*    and Chrome.
+* 3. Improve appearance and consistency in all browsers.
+*/
+/* line 401, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/**
+* Address Firefox 3+ setting `line-height` on `input` using `!important` in
+* the UA stylesheet.
+*/
+/* line 414, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+button, input {
+  line-height: normal; }
+
+/**
+* Address inconsistent `text-transform` inheritance for `button` and `select`.
+* All other form control elements do not inherit `text-transform` values.
+* Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+* Correct `select` style inheritance in Firefox 4+ and Opera.
+*/
+/* line 426, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+button, select {
+  text-transform: none; }
+
+/**
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Correct inability to style clickable `input` types in iOS.
+* 3. Improve usability and consistency of cursor style between image-type
+*    `input` and others.
+* 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+*    Known issue: inner spacing remains in IE 6.
+*/
+/* line 443, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/**
+* Re-set default cursor for disabled elements.
+*/
+/* line 454, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+* 1. Address box sizing set to content-box in IE 8/9.
+* 2. Remove excess padding in IE 8/9.
+* 3. Remove excess padding in IE 7.
+*    Known issue: excess padding remains in IE 6.
+*/
+/* line 466, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/**
+* 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+*    (include `-moz` to future-proof).
+*/
+/* line 479, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+* Remove inner padding and search cancel button in Safari 5 and Chrome
+* on OS X.
+*/
+/* line 492, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+* Remove inner padding and border in Firefox 3+.
+*/
+/* line 501, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+* 1. Remove default vertical scrollbar in IE 6/7/8/9.
+* 2. Improve readability and alignment in all browsers.
+*/
+/* line 511, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+Tables
+========================================================================== */
+/**
+* Remove most spacing between table cells.
+*/
+/* line 524, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 3, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 14px;
+  padding: 0 15px;
+  height: 32px;
+  line-height: 32px;
+  background-color: #fb6310;
+  color: #FFF;
+  border: solid 0 transparent;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #eee;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background-image: none;
+  /*Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214*/
+  /*Reset the extra padding in ie button element*/
+  width: auto;
+  overflow: visible; }
+
+/* line 25, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn:hover, .btn-hover {
+  text-decoration: none;
+  background-color: #e55b00; }
+
+/* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn:active, .btn-active {
+  text-decoration: none;
+  background-color: #db5700;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+
+/* line 37, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn:disabled, .btn-dis {
+  text-decoration: none;
+  background-color: #999;
+  pointer-events: none; }
+
+/* line 43, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn-blue {
+  color: #fff;
+  background-color: #3b83c0;
+  border-radius: radius;
+  box-shadow: 2px 2px 3px #eee; }
+  /* line 27, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-blue:hover, .btn-blue.btn-hover {
+    text-decoration: none;
+    background-color: #2f6899; }
+  /* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-blue:active, .btn-blue.btn-active {
+    text-decoration: none;
+    background-color: #295b85;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-blue:disabled, .btn-blue.btn-dis {
+    text-decoration: none;
+    pointer-events: none;
+    background-color: #999; }
+
+/* line 47, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn-orange {
+  color: #fff;
+  background-color: #ff8500;
+  border-radius: radius;
+  box-shadow: 2px 2px 3px #eee; }
+  /* line 27, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-orange:hover, .btn-orange.btn-hover {
+    text-decoration: none;
+    background-color: #cc6a00; }
+  /* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-orange:active, .btn-orange.btn-active {
+    text-decoration: none;
+    background-color: #b35d00;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-orange:disabled, .btn-orange.btn-dis {
+    text-decoration: none;
+    pointer-events: none;
+    background-color: #999; }
+
+/* line 51, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn-teal {
+  color: #fff;
+  background-color: #02b5ad;
+  border-radius: radius;
+  box-shadow: 2px 2px 3px #eee; }
+  /* line 27, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-teal:hover, .btn-teal.btn-hover {
+    text-decoration: none;
+    background-color: #01837d; }
+  /* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-teal:active, .btn-teal.btn-active {
+    text-decoration: none;
+    background-color: #016965;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-teal:disabled, .btn-teal.btn-dis {
+    text-decoration: none;
+    pointer-events: none;
+    background-color: #999; }
+
+/* line 55, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn-green {
+  color: #fff;
+  background-color: #38b87c;
+  border-radius: radius;
+  box-shadow: 2px 2px 3px #eee; }
+  /* line 27, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-green:hover, .btn-green.btn-hover {
+    text-decoration: none;
+    background-color: #2c9162; }
+  /* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-green:active, .btn-green.btn-active {
+    text-decoration: none;
+    background-color: #267d54;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-green:disabled, .btn-green.btn-dis {
+    text-decoration: none;
+    pointer-events: none;
+    background-color: #999; }
+
+/* line 59, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn-green-light {
+  color: #fff;
+  background-color: #5bbd72;
+  border-radius: radius;
+  box-shadow: 2px 2px 3px #eee; }
+  /* line 27, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-green-light:hover, .btn-green-light.btn-hover {
+    text-decoration: none;
+    background-color: #42a359; }
+  /* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-green-light:active, .btn-green-light.btn-active {
+    text-decoration: none;
+    background-color: #3a914f;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-green-light:disabled, .btn-green-light.btn-dis {
+    text-decoration: none;
+    pointer-events: none;
+    background-color: #999; }
+
+/* line 63, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn-red {
+  color: #fff;
+  background-color: #f34540;
+  border-radius: radius;
+  box-shadow: 2px 2px 3px #eee; }
+  /* line 27, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-red:hover, .btn-red.btn-hover {
+    text-decoration: none;
+    background-color: #f01610; }
+  /* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-red:active, .btn-red.btn-active {
+    text-decoration: none;
+    background-color: #d9130e;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-red:disabled, .btn-red.btn-dis {
+    text-decoration: none;
+    pointer-events: none;
+    background-color: #999; }
+
+/* line 67, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/button.scss */
+.btn-black {
+  color: #fff;
+  background-color: #1b1b1d;
+  border-radius: radius;
+  box-shadow: 2px 2px 3px #eee; }
+  /* line 27, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-black:hover, .btn-black.btn-hover {
+    text-decoration: none;
+    background-color: #020203; }
+  /* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-black:active, .btn-black.btn-active {
+    text-decoration: none;
+    background-color: black;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/ziro/src/less/mixin.scss */
+  .btn-black:disabled, .btn-black.btn-dis {
+    text-decoration: none;
+    pointer-events: none;
+    background-color: #999; }
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2Uuc2NzcyIsImJ1dHRvbi5zY3NzIiwibWl4aW4uc2NzcyIsInZhcmlhYmxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFVQSxTQUFTLE9BQU8sU0FBUyxZQUFZLFFBQVEsUUFBUSxRQUFRLFFBQVEsTUFBTSxLQUFLLFNBQVM7RUFZckYsU0FBUzs7Ozs7O0FBT2IsT0FBTyxRQUFRO0VBR1gsU0FBUztFQUNULFVBQVU7RUFDVixPQUFPOzs7Ozs7O0FBUVgsS0FBSyxLQUFLO0VBQ04sU0FBUztFQUNULFFBQVE7Ozs7Ozs7QUFRWjtFQUNJLFNBQVM7Ozs7Ozs7Ozs7OztBQWNiO0VBQ0ksV0FBVzs7RUFDWCxzQkFBc0I7O0VBQ3RCLDBCQUEwQjs7Ozs7Ozs7QUFROUIsTUFBTSxRQUFRLE9BQU8sUUFBUTtFQUt6QixhQUFhOzs7Ozs7QUFPakI7RUFDSSxRQUFROzs7Ozs7Ozs7QUFXWixDQUFDO0VBQ0csU0FBUzs7Ozs7O0FBT2IsQ0FBQyxTQUFTLENBQUM7RUFFUCxTQUFTOzs7Ozs7Ozs7OztBQWFiO0VBQ0ksV0FBVztFQUNYLFFBQVE7OztBQUdaO0VBQ0ksV0FBVztFQUNYLFFBQVE7OztBQUdaO0VBQ0ksV0FBVztFQUNYLFFBQVE7OztBQUdaO0VBQ0ksV0FBVztFQUNYLFFBQVE7OztBQUdaO0VBQ0ksV0FBVztFQUNYLFFBQVE7OztBQUdaO0VBQ0ksV0FBVztFQUNYLFFBQVE7Ozs7OztBQU9aLElBQUk7RUFDQSxlQUFlOzs7Ozs7QUFPbkIsR0FBRztFQUVDLGFBQWE7OztBQUdqQjtFQUNJLFFBQVE7Ozs7OztBQU9aO0VBQ0ksWUFBWTs7Ozs7OztBQVFoQjtFQUNJLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osUUFBUTs7Ozs7O0FBT1o7RUFDSSxZQUFZO0VBQ1osT0FBTzs7Ozs7O0FBT1gsR0FBRztFQUVDLFFBQVE7Ozs7OztBQU9aLE1BQU0sS0FBSyxLQUFLO0VBSVosYUFBYTtFQUNiLGNBQWM7RUFDZCxXQUFXOzs7Ozs7QUFPZjtF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LE9BQU87RUFDUCxrQkNZUTtFRFhSLGVBQWU7RUFDZixZQUFZOztFQXFCaEIsUUFBUSxRQUFRLFFBQVE7SUFFWixpQkFBaUI7SUFDakIsa0JBQWtCOztFQUM5QixRQUFRLFNBQVMsUUFBUTtJQUdiLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsb0JBQW9CO0lBQ3BCLFlBQVk7O0VBQ3hCLFFBQVEsV0FBVyxRQUFRO0lBR2YsaUJBQWlCO0lBQ2pCLGdCQUFlO0lBQ2Ysa0JBQWtCOzs7QUR5QjlCO0VDakVJLE9BQU87RUFDUCxrQkNTVTtFRFJWLGVBQWU7RUFDZixZQUFZOztFQXFCaEIsVUFBVSxRQUFRLFVBQVU7SUFFaEIsaUJBQWlCO0lBQ2pCLGtCQUFrQjs7RUFDOUIsVUFBVSxTQUFTLFVBQVU7SUFHakIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixvQkFBb0I7SUFDcEIsWUFBWTs7RUFDeEIsVUFBVSxXQUFXLFVBQVU7SUFHbkIsaUJBQWlCO0lBQ2pCLGdCQUFlO0lBQ2Ysa0JBQWtCIiwiZmlsZSI6ImZsYWcuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyohIG5vcm1hbGl6ZS5jc3MgdjEuMS4zIHwgTUlUIExpY2Vuc2UgfCBnaXQuaW8vbm9ybWFsaXplICovXG5cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5IVE1MNSBkaXNwbGF5IGRlZmluaXRpb25zXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiogQ29ycmVjdCBgYmxvY2tgIGRpc3BsYXkgbm90IGRlZmluZWQgaW4gSUUgNi83LzgvOSBhbmQgRmlyZWZveCAzLlxuKi9cblxuYXJ0aWNsZSxcbmFzaWRlLFxuZGV0YWlscyxcbmZpZ2NhcHRpb24sXG5maWd1cmUsXG5mb290ZXIsXG5oZWFkZXIsXG5oZ3JvdXAsXG5tYWluLFxubmF2LFxuc2VjdGlvbixcbnN1bW1hcnkge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKipcbiogQ29ycmVjdCBgaW5saW5lLWJsb2NrYCBkaXNwbGF5IG5vdCBkZWZpbmVkIGluIElFIDYvNy84LzkgYW5kIEZpcmVmb3ggMy5cbiovXG5cbmF1ZGlvLFxuY2FudmFzLFxudmlkZW8ge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAqZGlzcGxheTogaW5saW5lO1xuICAgICp6b29tOiAxO1xufVxuXG4vKipcbiogUHJldmVudCBtb2Rlcm4gYnJvd3NlcnMgZnJvbSBkaXNwbGF5aW5nIGBhdWRpb2Agd2l0aG91dCBjb250cm9scy5cbiogUmVtb3ZlIGV4Y2VzcyBoZWlnaHQgaW4gaU9TIDUgZGV2aWNlcy5cbiovXG5cbmF1ZGlvOm5vdChbY29udHJvbHNdKSB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgICBoZWlnaHQ6IDA7XG59XG5cbi8qKlxuKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gSUUgNy84LzksIEZpcmVmb3ggMywgYW5kIFNhZmFyaSA0LlxuKiBLbm93biBpc3N1ZTogbm8gSUUgNiBzdXBwb3J0LlxuKi9cblxuW2hpZGRlbl0ge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5CYXNlXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiogMS4gQ29ycmVjdCB0ZXh0IHJlc2l6aW5nIG9kZGx5IGluIElFIDYvNyB3aGVuIGJvZHkgYGZvbnQtc2l6ZWAgaXMgc2V0IHVzaW5nXG4qICAgIGBlbWAgdW5pdHMuXG4qIDIuIFByZXZlbnQgaU9TIHRleHQgc2l6ZSBhZGp1c3QgYWZ0ZXIgb3JpZW50YXRpb24gY2hhbmdlLCB3aXRob3V0IGRpc2FibGluZ1xuKiAgICB1c2VyIHpvb20uXG4qL1xuXG5odG1sIHtcbiAgICBmb250LXNpemU6IDEwMCU7IC8qIDEgKi9cbiAgICAtbXMtdGV4dC1zaXplLWFkanVzdDogMTAwJTsgLyogMiAqL1xuICAgIC13ZWJraXQtdGV4dC1zaXplLWFkanVzdDogMTAwJTsgLyogMiAqL1xufVxuXG4vKipcbiogQWRkcmVzcyBgZm9udC1mYW1pbHlgIGluY29uc2lzdGVuY3kgYmV0d2VlbiBgdGV4dGFyZWFgIGFuZCBvdGhlciBmb3JtXG4qIGVsZW1lbnRzLlxuKi9cblxuaHRtbCxcbmJ1dHRvbixcbmlucHV0LFxuc2VsZWN0LFxudGV4dGFyZWEge1xuICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xufVxuXG4vKipcbiogQWRkcmVzcyBtYXJnaW5zIGhhbmRsZWQgaW5jb3JyZWN0bHkgaW4gSUUgNi83LlxuKi9cblxuYm9keSB7XG4gICAgbWFyZ2luOiAwO1xufVxuXG4vKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuTGlua3Ncbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG5cbi8qKlxuKiBBZGRyZXNzIGBvdXRsaW5lYCBpbmNvbnNpc3RlbmN5IGJldHdlZW4gQ2hyb21lIGFuZCBvdGhlciBicm93c2Vycy5cbiovXG5cbmE6Zm9jdXMge1xuICAgIG91dGxpbmU6IHRoaW4gZG90dGVkO1xufVxuXG4vKipcbiogSW1wcm92ZSByZWFkYWJpbGl0eSB3aGVuIGZvY3VzZWQgYW5kIGFsc28gbW91c2UgaG92ZXJlZCBpbiBhbGwgYnJvd3NlcnMuXG4qL1xuXG5hOmFjdGl2ZSxcbmE6aG92ZXIge1xuICAgIG91dGxpbmU6IDA7XG59XG5cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5UeXBvZ3JhcGh5XG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiogQWRkcmVzcyBmb250IHNpemVzIGFuZCBtYXJnaW5zIHNldCBkaWZmZXJlbnRseSBpbiBJRSA2LzcuXG4qIEFkZHJlc3MgZm9udCBzaXplcyB3aXRoaW4gYHNlY3Rpb25gIGFuZCBgYXJ0aWNsZWAgaW4gRmlyZWZveCA0KywgU2FmYXJpIDUsXG4qIGFuZCBDaHJvbWUuXG4qL1xuXG5oMSB7XG4gICAgZm9udC1zaXplOiAyZW07XG4gICAgbWFyZ2luOiAwLjY3ZW0gMDtcbn1cblxuaDIge1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgbWFyZ2luOiAwLjgzZW0gMDtcbn1cblxuaDMge1xuICAgIGZvbnQtc2l6ZTogMS4xN2VtO1xuICAgIG1hcmdpbjogMWVtIDA7XG59XG5cbmg0IHtcbiAgICBmb250LXNpemU6IDFlbTtcbiAgICBtYXJnaW46IDEuMzNlbSAwO1xufVxuXG5oNSB7XG4gICAgZm9udC1zaXplOiAwLjgzZW07XG4gICAgbWFyZ2luOiAxLjY3ZW0gMDtcbn1cblxuaDYge1xuICAgIGZvbnQtc2l6ZTogMC42N2VtO1xuICAgIG1hcmdpbjogMi4zM2VtIDA7XG59XG5cbi8qKlxuKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gSUUgNy84LzksIFNhZmFyaSA1LCBhbmQgQ2hyb21lLlxuKi9cblxuYWJiclt0aXRsZV0ge1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQ7XG59XG5cbi8qKlxuKiBBZGRyZXNzIHN0eWxlIHNldCB0byBgYm9sZGVyYCBpbiBGaXJlZm94IDMrLCBTYWZhcmkgNC81LCBhbmQgQ2hyb21lLlxuKi9cblxuYixcbnN0cm9uZyB7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbmJsb2NrcXVvdGUge1xuICAgIG1hcmdpbjogMWVtIDQwcHg7XG59XG5cbi8qKlxuKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gU2FmYXJpIDUgYW5kIENocm9tZS5cbiovXG5cbmRmbiB7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xufVxuXG4vKipcbiogQWRkcmVzcyBkaWZmZXJlbmNlcyBiZXR3ZWVuIEZpcmVmb3ggYW5kIG90aGVyIGJyb3dzZXJzLlxuKiBLbm93biBpc3N1ZTogbm8gSUUgNi83IG5vcm1hbGl6YXRpb24uXG4qL1xuXG5ociB7XG4gICAgLW1vei1ib3gtc2l6aW5nOiBjb250ZW50LWJveDtcbiAgICBib3gtc2l6aW5nOiBjb250ZW50LWJveDtcbiAgICBoZWlnaHQ6IDA7XG59XG5cbi8qKlxuKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gSUUgNi83LzgvOS5cbiovXG5cbm1hcmsge1xuICAgIGJhY2tncm91bmQ6ICNmZjA7XG4gICAgY29sb3I6ICMwMDA7XG59XG5cbi8qKlxuKiBBZGRyZXNzIG1hcmdpbnMgc2V0IGRpZmZlcmVudGx5IGluIElFIDYvNy5cbiovXG5cbnAsXG5wcmUge1xuICAgIG1hcmdpbjogMWVtIDA7XG59XG5cbi8qKlxuKiBDb3JyZWN0IGZvbnQgZmFtaWx5IHNldCBvZGRseSBpbiBJRSA2LCBTYWZhcmkgNC81LCBhbmQgQ2hyb21lLlxuKi9cblxuY29kZSxcbmtiZCxcbnByZSxcbnNhbXAge1xuICAgIGZvbnQtZmFtaWx5OiBtb25vc3BhY2UsIHNlcmlmO1xuICAgIF9mb250LWZhbWlseTogJ2NvdXJpZXIgbmV3JywgbW9ub3NwYWNlO1xuICAgIGZvbnQtc2l6ZTogMWVtO1xufVxuXG4vKipcbiogSW1wcm92ZSByZWFkYWJpbGl0eSBvZiBwcmUtZm9ybWF0dGVkIHRleHQgaW4gYWxsIGJyb3dzZXJzLlxuKi9cblxucHJlIHtcbiAgICB3aGl0ZS1zcGFjZTogcHJlO1xuICAgIHdoaXRlLXNwYWNlOiBwcmUtd3JhcDtcbiAgICB3b3JkLXdyYXA6IGJyZWFrLXdvcmQ7XG59XG5cbi8qKlxuKiBBZGRyZXNzIENTUyBxdW90ZXMgbm90IHN1cHBvcnRlZCBpbiBJRSA2LzcuXG4qL1xuXG5xIHtcbiAgICBxdW90ZXM6IG5vbmU7XG59XG5cbi8qKlxuKiBBZGRyZXNzIGBxdW90ZXNgIHByb3BlcnR5IG5vdCBzdXBwb3J0ZWQgaW4gU2FmYXJpIDQuXG4qL1xuXG5xOmJlZm9yZSxcbnE6YWZ0ZXIge1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIGNvbnRlbnQ6IG5vbmU7XG59XG5cbi8qKlxuKiBBZGRyZXNzIGluY29uc2lzdGVudCBhbmQgdmFyaWFibGUgZm9udCBzaXplIGluIGFsbCBicm93c2Vycy5cbiovXG5cbnNtYWxsIHtcbiAgICBmb250LXNpemU6IDgwJTtcbn1cblxuLyoqXG4qIFByZXZlbnQgYHN1YmAgYW5kIGBzdXBgIGFmZmVjdGluZyBgbGluZS1oZWlnaHRgIGluIGFsbCBicm93c2Vycy5cbiovXG5cbnN1YixcbnN1cCB7XG4gICAgZm9udC1zaXplOiA3NSU7XG4gICAgbGluZS1oZWlnaHQ6IDA7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTtcbn1cblxuc3VwIHtcbiAgICB0b3A6IC0wLjVlbTtcbn1cblxuc3ViIHtcbiAgICBib3R0b206IC0wLjI1ZW07XG59XG5cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5MaXN0c1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cblxuLyoqXG4qIEFkZHJlc3MgbWFyZ2lucyBzZXQgZGlmZmVyZW50bHkgaW4gSUUgNi83LlxuKi9cblxuZGwsXG5tZW51LFxub2wsXG51bCB7XG4gICAgbWFyZ2luOiAxZW0gMDtcbn1cblxuZGQge1xuICAgIG1hcmdpbjogMCAwIDAgNDBweDtcbn1cblxuLyoqXG4qIEFkZHJlc3MgcGFkZGluZ3Mgc2V0IGRpZmZlcmVudGx5IGluIElFIDYvNy5cbiovXG5cbm1lbnUsXG5vbCxcbnVsIHtcbiAgICBwYWRkaW5nOiAwIDAgMCA0MHB4O1xufVxuXG4vKipcbiogQ29ycmVjdCBsaXN0IGltYWdlcyBoYW5kbGVkIGluY29ycmVjdGx5IGluIElFIDcuXG4qL1xuXG5uYXYgdWwsXG5uYXYgb2wge1xuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XG4gICAgbGlzdC1zdHlsZS1pbWFnZTogbm9uZTtcbn1cblxuLyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbkVtYmVkZGVkIGNvbnRlbnRcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG5cbi8qKlxuKiAxLiBSZW1vdmUgYm9yZGVyIHdoZW4gaW5zaWRlIGBhYCBlbGVtZW50IGluIElFIDYvNy84LzkgYW5kIEZpcmVmb3ggMy5cbiogMi4gSW1wcm92ZSBpbWFnZSBxdWFsaXR5IHdoZW4gc2NhbGVkIGluIElFIDcuXG4qL1xuXG5pbWcge1xuICAgIGJvcmRlcjogMDsgLyogMSAqL1xuICAgIC1tcy1pbnRlcnBvbGF0aW9uLW1vZGU6IGJpY3ViaWM7IC8qIDIgKi9cbn1cblxuLyoqXG4qIENvcnJlY3Qgb3ZlcmZsb3cgZGlzcGxheWVkIG9kZGx5IGluIElFIDkuXG4qL1xuXG5zdmc6bm90KDpyb290KSB7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbkZpZ3VyZXNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG5cbi8qKlxuKiBBZGRyZXNzIG1hcmdpbiBub3QgcHJlc2VudCBpbiBJRSA2LzcvOC85LCBTYWZhcmkgNSwgYW5kIE9wZXJhIDExLlxuKi9cblxuZmlndXJlIHtcbiAgICBtYXJnaW46IDA7XG59XG5cbi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5Gb3Jtc1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cblxuLyoqXG4qIENvcnJlY3QgbWFyZ2luIGRpc3BsYXllZCBvZGRseSBpbiBJRSA2LzcuXG4qL1xuXG5mb3JtIHtcbiAgICBtYXJnaW46IDA7XG59XG5cbi8qKlxuKiBEZWZpbmUgY29uc2lzdGVudCBib3JkZXIsIG1hcmdpbiwgYW5kIHBhZGRpbmcuXG4qL1xuXG5maWVsZHNldCB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2MwYzBjMDtcbiAgICBtYXJnaW46IDAgMnB4O1xuICAgIHBhZGRpbmc6IDAuMzVlbSAwLjYyNWVtIDAuNzVlbTtcbn1cblxuLyoqXG4qIDEuIENvcnJlY3QgY29sb3Igbm90IGJlaW5nIGluaGVyaXRlZCBpbiBJRSA2LzcvOC85LlxuKiAyLiBDb3JyZWN0IHRleHQgbm90IHdyYXBwaW5nIGluIEZpcmVmb3ggMy5cbiogMy4gQ29ycmVjdCBhbGlnbm1lbnQgZGlzcGxheWVkIG9kZGx5IGluIElFIDYvNy5cbiovXG5cbmxlZ2VuZCB7XG4gICAgYm9yZGVyOiAwOyAvKiAxICovXG4gICAgcGFkZGluZzogMDtcbiAgICB3aGl0ZS1zcGFjZTogbm9ybWFsOyAvKiAyICovXG4gICAgKm1hcmdpbi1sZWZ0OiAtN3B4OyAvKiAzICovXG59XG5cbi8qKlxuKiAxLiBDb3JyZWN0IGZvbnQgc2l6ZSBub3QgYmVpbmcgaW5oZXJpdGVkIGluIGFsbCBicm93c2Vycy5cbiogMi4gQWRkcmVzcyBtYXJnaW5zIHNldCBkaWZmZXJlbnRseSBpbiBJRSA2LzcsIEZpcmVmb3ggMyssIFNhZmFyaSA1LFxuKiAgICBhbmQgQ2hyb21lLlxuKiAzLiBJbXByb3ZlIGFwcGVhcmFuY2UgYW5kIGNvbnNpc3RlbmN5IGluIGFsbCBicm93c2Vycy5cbiovXG5cbmJ1dHRvbixcbmlucHV0LFxuc2VsZWN0LFxudGV4dGFyZWEge1xuICAgIGZvbnQtc2l6ZTogMTAwJTsgLyogMSAqL1xuICAgIG1hcmdpbjogMDsgLyogMiAqL1xuICAgIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgLyogMyAqL1xuICAgICp2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyAvKiAzICovXG59XG5cbi8qKlxuKiBBZGRyZXNzIEZpcmVmb3ggMysgc2V0dGluZyBgbGluZS1oZWlnaHRgIG9uIGBpbnB1dGAgdXNpbmcgYCFpbXBvcnRhbnRgIGluXG4qIHRoZSBVQSBzdHlsZXNoZWV0LlxuKi9cblxuYnV0dG9uLFxuaW5wdXQge1xuICAgIGxpbmUtaGVpZ2h0OiBub3JtYWw7XG59XG5cbi8qKlxuKiBBZGRyZXNzIGluY29uc2lzdGVudCBgdGV4dC10cmFuc2Zvcm1gIGluaGVyaXRhbmNlIGZvciBgYnV0dG9uYCBhbmQgYHNlbGVjdGAuXG4qIEFsbCBvdGhlciBmb3JtIGNvbnRyb2wgZWxlbWVudHMgZG8gbm90IGluaGVyaXQgYHRleHQtdHJhbnNmb3JtYCB2YWx1ZXMuXG4qIENvcnJlY3QgYGJ1dHRvbmAgc3R5bGUgaW5oZXJpdGFuY2UgaW4gQ2hyb21lLCBTYWZhcmkgNSssIGFuZCBJRSA2Ky5cbiogQ29ycmVjdCBgc2VsZWN0YCBzdHlsZSBpbmhlcml0YW5jZSBpbiBGaXJlZm94IDQrIGFuZCBPcGVyYS5cbiovXG5cbmJ1dHRvbixcbnNlbGVjdCB7XG4gICAgdGV4dC10cmFuc2Zvcm06IG5vbmU7XG59XG5cbi8qKlxuKiAxLiBBdm9pZCB0aGUgV2ViS2l0IGJ1ZyBpbiBBbmRyb2lkIDQuMC4qIHdoZXJlICgyKSBkZXN0cm95cyBuYXRpdmUgYGF1ZGlvYFxuKiAgICBhbmQgYHZpZGVvYCBjb250cm9scy5cbiogMi4gQ29ycmVjdCBpbmFiaWxpdHkgdG8gc3R5bGUgY2xpY2thYmxlIGBpbnB1dGAgdHlwZXMgaW4gaU9TLlxuKiAzLiBJbXByb3ZlIHVzYWJpbGl0eSBhbmQgY29uc2lzdGVuY3kgb2YgY3Vyc29yIHN0eWxlIGJldHdlZW4gaW1hZ2UtdHlwZVxuKiAgICBgaW5wdXRgIGFuZCBvdGhlcnMuXG4qIDQuIFJlbW92ZSBpbm5lciBzcGFjaW5nIGluIElFIDcgd2l0aG91dCBhZmZlY3Rpbmcgbm9ybWFsIHRleHQgaW5wdXRzLlxuKiAgICBLbm93biBpc3N1ZTogaW5uZXIgc3BhY2luZyByZW1haW5zIGluIElFIDYuXG4qL1xuXG5idXR0b24sXG5odG1sIGlucHV0W3R5cGU9XCJidXR0b25cIl0sIC8qIDEgKi9cbmlucHV0W3R5cGU9XCJyZXNldFwiXSxcbmlucHV0W3R5cGU9XCJzdWJtaXRcIl0ge1xuICAgIC13ZWJraXQtYXBwZWFyYW5jZTogYnV0dG9uOyAvKiAyICovXG4gICAgY3Vyc29yOiBwb2ludGVyOyAvKiAzICovXG4gICAgKm92ZXJmbG93OiB2aXNpYmxlOyAgLyogNCAqL1xufVxuXG4vKipcbiogUmUtc2V0IGRlZmF1bHQgY3Vyc29yIGZvciBkaXNhYmxlZCBlbGVtZW50cy5cbiovXG5cbmJ1dHRvbltkaXNhYmxlZF0sXG5odG1sIGlucHV0W2Rpc2FibGVkXSB7XG4gICAgY3Vyc29yOiBkZWZhdWx0O1xufVxuXG4vKipcbiogMS4gQWRkcmVzcyBib3ggc2l6aW5nIHNldCB0byBjb250ZW50LWJveCBpbiBJRSA4LzkuXG4qIDIuIFJlbW92ZSBleGNlc3MgcGFkZGluZyBpbiBJRSA4LzkuXG4qIDMuIFJlbW92ZSBleGNlc3MgcGFkZGluZyBpbiBJRSA3LlxuKiAgICBLbm93biBpc3N1ZTogZXhjZXNzIHBhZGRpbmcgcmVtYWlucyBpbiBJRSA2LlxuKi9cblxuaW5wdXRbdHlwZT1cImNoZWNrYm94XCJdLFxuaW5wdXRbdHlwZT1cInJhZGlvXCJdIHtcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94OyAvKiAxICovXG4gICAgcGFkZGluZzogMDsgLyogMiAqL1xuICAgICpoZWlnaHQ6IDEzcHg7IC8qIDMgKi9cbiAgICAqd2lkdGg6IDEzcHg7IC8qIDMgKi9cbn1cblxuLyoqXG4qIDEuIEFkZHJlc3MgYGFwcGVhcmFuY2VgIHNldCB0byBgc2VhcmNoZmllbGRgIGluIFNhZmFyaSA1IGFuZCBDaHJvbWUuXG4qIDIuIEFkZHJlc3MgYGJveC1zaXppbmdgIHNldCB0byBgYm9yZGVyLWJveGAgaW4gU2FmYXJpIDUgYW5kIENocm9tZVxuKiAgICAoaW5jbHVkZSBgLW1vemAgdG8gZnV0dXJlLXByb29mKS5cbiovXG5cbmlucHV0W3R5cGU9XCJzZWFyY2hcIl0ge1xuICAgIC13ZWJraXQtYXBwZWFyYW5jZTogdGV4dGZpZWxkOyAvKiAxICovXG4gICAgLW1vei1ib3gtc2l6aW5nOiBjb250ZW50LWJveDtcbiAgICAtd2Via2l0LWJveC1zaXppbmc6IGNvbnRlbnQtYm94OyAvKiAyICovXG4gICAgYm94LXNpemluZzogY29udGVudC1ib3g7XG59XG5cbi8qKlxuKiBSZW1vdmUgaW5uZXIgcGFkZGluZyBhbmQgc2VhcmNoIGNhbmNlbCBidXR0b24gaW4gU2FmYXJpIDUgYW5kIENocm9tZVxuKiBvbiBPUyBYLlxuKi9cblxuaW5wdXRbdHlwZT1cInNlYXJjaFwiXTo6LXdlYmtpdC1zZWFyY2gtY2FuY2VsLWJ1dHRvbixcbmlucHV0W3R5cGU9XCJzZWFyY2hcIl06Oi13ZWJraXQtc2VhcmNoLWRlY29yYXRpb24ge1xuICAgIC13ZWJraXQtYXBwZWFyYW5jZTogbm9uZTtcbn1cblxuLyoqXG4qIFJlbW92ZSBpbm5lciBwYWRkaW5nIGFuZCBib3JkZXIgaW4gRmlyZWZveCAzKy5cbiovXG5cbmJ1dHRvbjo6LW1vei1mb2N1cy1pbm5lcixcbmlucHV0OjotbW96LWZvY3VzLWlubmVyIHtcbiAgICBib3JkZXI6IDA7XG4gICAgcGFkZGluZzogMDtcbn1cblxuLyoqXG4qIDEuIFJlbW92ZSBkZWZhdWx0IHZlcnRpY2FsIHNjcm9sbGJhciBpbiBJRSA2LzcvOC85LlxuKiAyLiBJbXByb3ZlIHJlYWRhYmlsaXR5IGFuZCBhbGlnbm1lbnQgaW4gYWxsIGJyb3dzZXJzLlxuKi9cblxudGV4dGFyZWEge1xuICAgIG92ZXJmbG93OiBhdXRvOyAvKiAxICovXG4gICAgdmVydGljYWwtYWxpZ246IHRvcDsgLyogMiAqL1xufVxuXG4vKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuVGFibGVzXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiogUmVtb3ZlIG1vc3Qgc3BhY2luZyBiZXR3ZWVuIHRhYmxlIGNlbGxzLlxuKi9cblxudGFibGUge1xuICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XG4gICAgYm9yZGVyLXNwYWNpbmc6IDA7XG59XG4iLCJAY2hhcnNldCBcInV0Zi04XCI7XG5cbi5idG57XG5cdEBpbmNsdWRlIGlubGluZS1ibG9jaztcblx0Zm9udC1zaXplOiAxNHB4O1xuXHRwYWRkaW5nOiAwIDE1cHg7XG5cdGhlaWdodDogMzJweDtcblx0bGluZS1oZWlnaHQ6IDMycHg7XG5cdGJhY2tncm91bmQtY29sb3I6ICRjb2xvci1kZWZhdWx0O1xuXHRjb2xvcjogI0ZGRjtcblx0Ym9yZGVyOiBzb2xpZCAwIHRyYW5zcGFyZW50O1xuXHRib3JkZXItcmFkaXVzOiAkYnRuLXJhZGl1cztcblx0Ym94LXNoYWRvdzogMnB4IDJweCAzcHggI2VlZTtcblx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHR2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuXHR0ZXh0LWRlY29yYXRpb246IG5vbmU7XG5cdGN1cnNvcjogcG9pbnRlcjtcblx0d2hpdGUtc3BhY2U6IG5vd3JhcDtcblx0YmFja2dyb3VuZC1pbWFnZTogbm9uZTsgLypSZXNldCB1bnVzdWFsIEZpcmVmb3gtb24tQW5kcm9pZCBkZWZhdWx0IHN0eWxlOyBzZWUgaHR0cHM6Ly9naXRodWIuY29tL25lY29sYXMvbm9ybWFsaXplLmNzcy9pc3N1ZXMvMjE0Ki9cblx0LypSZXNldCB0aGUgZXh0cmEgcGFkZGluZyBpbiBpZSBidXR0b24gZWxlbWVudCovXG5cdHdpZHRoOiBhdXRvO1xuXHRvdmVyZmxvdzogdmlzaWJsZTtcbn1cblxuLmJ0bjpob3ZlciwgLmJ0bi1ob3Zlcntcblx0dGV4dC1kZWNvcmF0aW9uOiBub25lO1xuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjZTU1YjAwO1xufVxuXG4uYnRuOmFjdGl2ZSwgLmJ0bi1hY3RpdmV7XG5cdHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblx0YmFja2dyb3VuZC1jb2xvcjogI2RiNTcwMDtcbiAgICAtd2Via2l0LWJveC1zaGFkb3c6IGluc2V0IDAgM3B4IDVweCByZ2JhKDAsMCwwLC4xMjUpO1xuXHRib3gtc2hhZG93OiBpbnNldCAwIDNweCA1cHggcmdiYSgwLDAsMCwuMTI1KTtcbn1cblxuLmJ0bjpkaXNhYmxlZCwgLmJ0bi1kaXN7XG5cdHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblx0YmFja2dyb3VuZC1jb2xvcjogIzk5OTtcblx0cG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbi5idG4tYmx1ZXtcblx0QGluY2x1ZGUgYnRuLXZhcmlhbnQoJGZvbnQtY29sb3Itd2hpdGUsICRjb2xvci1ibHVlLCAkYnRuLXJhZGl1cyk7XG59XG5cbi5idG4tb3Jhbmdle1xuXHRAaW5jbHVkZSBidG4tdmFyaWFudCgkZm9udC1jb2xvci13aGl0ZSwgJGNvbG9yLW9yYW5nZSwgJGJ0bi1yYWRpdXMpO1xufVxuXG4uYnRuLXRlYWx7XG5cdEBpbmNsdWRlIGJ0bi12YXJpYW50KCRmb250LWNvbG9yLXdoaXRlLCAkY29sb3ItdGVhbCwgJGJ0bi1yYWRpdXMpO1xufVxuXG4uYnRuLWdyZWVue1xuXHRAaW5jbHVkZSBidG4tdmFyaWFudCgkZm9udC1jb2xvci13aGl0ZSwgJGNvbG9yLWdyZWVuLCAkYnRuLXJhZGl1cyk7XG59XG5cbi5idG4tZ3JlZW4tbGlnaHR7XG5cdEBpbmNsdWRlIGJ0bi12YXJpYW50KCRmb250LWNvbG9yLXdoaXRlLCAkY29sb3ItZ3JlZW4tbGlnaHQsICRidG4tcmFkaXVzKTtcbn1cblxuLmJ0bi1yZWR7XG5cdEBpbmNsdWRlIGJ0bi12YXJpYW50KCRmb250LWNvbG9yLXdoaXRlLCAkY29sb3ItcmVkLCAkYnRuLXJhZGl1cyk7XG59XG5cbi5idG4tYmxhY2t7XG5cdEBpbmNsdWRlIGJ0bi12YXJpYW50KCRmb250LWNvbG9yLXdoaXRlLCAkY29sb3ItYmxhY2ssICRidG4tcmFkaXVzKTtcbn1cbiIsIkBtaXhpbiBidG4tdmFyaWFudCgkY29sb3IsICRiZywgJHJhZGl1cykge1xuICAgIGNvbG9yOiAkY29sb3IsO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICRiZztcbiAgICBib3JkZXItcmFkaXVzOiByYWRpdXM7XG4gICAgYm94LXNoYWRvdzogMnB4IDJweCAzcHggI2VlZTtcblxuICAgIEBpZiAkc3VwcG9ydC1vbGQtaWV7XG4gICAgICAgICY6aG92ZXIsICYtaG92ZXJ7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrZW4oJGJnLCAxMCUpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUsICYtYWN0aXZle1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZGFya2VuKCRiZywgMTUlKTtcbiAgICAgICAgICAgIC13ZWJraXQtYm94LXNoYWRvdzogaW5zZXQgMCAzcHggNXB4IHJnYmEoMCwwLDAsLjEyNSk7XG4gICAgICAgICAgICBib3gtc2hhZG93OiBpbnNldCAwIDNweCA1cHggcmdiYSgwLDAsMCwuMTI1KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6ZGlzYWJsZWQsICYtZGlze1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgcG9pbnRlci1ldmVudHM6bm9uZTtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM5OTk7XG4gICAgICAgIH1cbiAgICAgICAgXG4gICAgfSBAZWxzZSB7XG4gICAgICAgICY6aG92ZXIsICYuYnRuLWhvdmVye1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZGFya2VuKCRiZywgMTAlKTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlLCAmLmJ0bi1hY3RpdmV7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrZW4oJGJnLCAxNSUpO1xuICAgICAgICAgICAgLXdlYmtpdC1ib3gtc2hhZG93OiBpbnNldCAwIDNweCA1cHggcmdiYSgwLDAsMCwuMTI1KTtcbiAgICAgICAgICAgIGJveC1zaGFkb3c6IGluc2V0IDAgM3B4IDVweCByZ2JhKDAsMCwwLC4xMjUpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjpkaXNhYmxlZCwgJi5idG4tZGlze1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgcG9pbnRlci1ldmVudHM6bm9uZTtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM5OTk7XG4gICAgICAgIH1cbiAgICB9XG4gICAgXG59XG5cbkBtaXhpbiBpbmxpbmUtYmxvY2sge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAqZGlzcGxheTogaW5saW5lO1xuICAgICp6b29tOiAxO1xufVxuIiwiLy9pZiBzdXBwb3J0IGllNiw3XG4kc3VwcG9ydC1vbGQtaWU6IGZhbHNlO1xuXG4kY29sb3ItZGVmYXVsdDogI2ZiNjMxMDtcbiRjb2xvci1vcmFuZ2U6ICNmZjg1MDA7XG4kY29sb3ItYmx1ZTogIzNiODNjMDtcbiRjb2xvci15ZWxsb3c6ICNmZmFiMTk7XG4kY29sb3ItYmx1ZS1saWdodDogIzQ1OGFjNjtcbiRjb2xvci1ncmVlbjogIzM4Yjg3YztcbiRjb2xvci1ncmVlbi1saWdodDogIzViYmQ3MjtcbiRjb2xvci13YXJuaW5nOiAjZDk1YzVjO1xuJGNvbG9yLWJsYWNrOiAjMWIxYjFkO1xuJGNvbG9yLXB1cnBsZTogIzU2NGY4YTtcbiRjb2xvci10ZWFsOiAjMDJiNWFkO1xuJGNvbG9yLXJlZDogI2YzNDU0MDtcbiRjb2xvci13aGl0ZTogI2ZmZjtcbiRmb250LWNvbG9yLXdoaXRlOiAjZmZmO1xuXG4kYnRuLXJhZGl1czogM3B4O1xuXG4kZm9udC1zaXplOiAxNHB4O1xuJGZvbnQtc2l6ZS1iZzogMThweDtcbiRmb250LXNpemUtc21hbGw6IDExcHg7Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
