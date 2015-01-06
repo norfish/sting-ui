@@ -40,19 +40,19 @@
 	pointer-events: none;
 }
 
-.btn-blue{
+.btn-blue, .btn-primary{
 	@include btn-variant($font-color-white, $color-blue, $btn-radius);
 }
 
-.btn-orange{
+.btn-orange, .btn-buy{
 	@include btn-variant($font-color-white, $color-orange, $btn-radius);
 }
 
-.btn-teal{
+.btn-teal, .btn-info{
 	@include btn-variant($font-color-white, $color-teal, $btn-radius);
 }
 
-.btn-green{
+.btn-green, .btn-success{
 	@include btn-variant($font-color-white, $color-green, $btn-radius);
 }
 
@@ -60,7 +60,7 @@
 	@include btn-variant($font-color-white, $color-green-light, $btn-radius);
 }
 
-.btn-red{
+.btn-red, .btn-danger{
 	@include btn-variant($font-color-white, $color-red, $btn-radius);
 }
 

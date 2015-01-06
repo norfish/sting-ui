@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ziro-UI</title>
+	<link rel="stylesheet" href="./build/css/flag.css">
+	<style rel="stylesheet">
+		.section{
+			width: 1036px;
+			margin: 0 auto 20px;
+		}
+
+		.ie-btn{
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			padding: 0 15px;
+			line-height: 32px;
+			width: auto;
+			overflow: visible;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="section">
+			<h1>UI</h1>
+		</div>
+
+	</div>
+
+	<div class="wrapper">
+		<div class="section">
+
+			<div class="ctrl-form" style="position: relative;z-index: 40;">
+				<label for="" class="ctrl-label">手机号码</label>
+				<div class="input-wrap">
+					<input name="mobile" autocomplete="off" maxlength="11" type="text" data-jvalid-ruler="empty mobile_err" class="input">
+					<i class="icon"></i>
+
+					<input type="checkbox">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--Script Start-->
+	<script src="http://js.io/js/jquery-1.11.1.js"></script>
+	<script src="src/js/components/dialog.js"></script>
+	<script type="text/javascript">
+		(function(){
+			var d = dialog({
+				title: '这是一个dialog',				
+				content: 'dialog',
+				okValue: '确定',
+				ok: function(){}
+			});
+
+			d.show();
+		})()
+	</script>
+	<!--/Script End-->
+</body>
+</html>

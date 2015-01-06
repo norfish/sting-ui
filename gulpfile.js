@@ -9,10 +9,10 @@ var $ = require('gulp-load-plugins')();
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('scss', function() {
-	return gulp.src('./src/scss/**/flag.scss')
-	  .pipe(sourcemaps.init())
+	return gulp.src('./src/scss/**/main.scss')
+	  //.pipe(sourcemaps.init())
 	  .pipe($.sass())
-	  .pipe(sourcemaps.write())
+	  //.pipe(sourcemaps.write())
 	  .pipe($.size())
 	  .pipe(gulp.dest('./build/css'));
 });
