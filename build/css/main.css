@@ -1,408 +1,146 @@
-/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
-/* ==========================================================================
-HTML5 display definitions
-========================================================================== */
-/**
-* Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+/*
+** Css Reset
+** Version: 3.0.0
+** Author Joy Du(飘零雾雨)
+** Edit at 2012.3.1
 */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+/* 防止用户自定义网页背景及文字颜色、大小影响 */
+/* line 9, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+html {
+  background: #fff;
+  color: #333;
+  font-size: 12px; }
+
+/* 清除某些元素在不同浏览器下内外补白不同造成的影响 */
+/* line 15, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, figure, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, pre, xmp {
+  margin: 0;
+  padding: 0; }
+
+/* 设置默认字集及行高，表单及某些特殊元素不继承祖先font相关属性 */
+/* line 20, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+body, input, textarea, button, select, pre, tt, code, kbd, samp, optgroup, option {
+  line-height: 1.5;
+  font-family: arial, '\5b8b\4f53', '\5fae\8f6f\96c5\9ed1', verdana, helvetica, sans-serif; }
+
+/* 清除单元格边距并让边框合并 */
+/* line 25, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left; }
+
+/* 设置caption继承父元素的对齐方式，同时修复IE下th不继承父元素对齐方式bug */
+/* line 31, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+caption, th {
+  text-align: inherit;
+  font-weight: 400; }
+
+/* 清除列表默认序号 */
+/* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+ul, ol, menu {
+  list-style: none; }
+
+/* 清除默认边框 */
+/* line 40, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+fieldset, img {
+  border: 0 none; }
+
+/* 设置某些元素居中对齐 */
+/* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+img, object, input, textarea, button, select {
+  vertical-align: middle; }
+
+/* 设置某些HTML5元素为块元素 */
+/* line 48, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+article, aside, footer, header, section, nav, figure, figcaption, hgroup, details, menu {
   display: block; }
 
-/**
-* Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
-*/
+/* 设置HTML5新增媒体元素与img,object保持一致 */
+/* line 52, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 audio, canvas, video {
-  display: inline-block;
+  display: block;
   *display: inline;
   *zoom: 1; }
 
-/**
-* Prevent modern browsers from displaying `audio` without controls.
-* Remove excess height in iOS 5 devices.
-*/
-audio:not([controls]) {
-  display: none;
-  height: 0; }
+/* 清除某些元素不继承祖先元素font-size的影响 */
+/* line 58, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+h1, h2, h3, h4, h5, h6, input, textarea, button, select, small {
+  font-size: 100%; }
 
-/**
-* Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
-* Known issue: no IE 6 support.
-*/
-[hidden] {
-  display: none; }
-
-/* ==========================================================================
-Base
-========================================================================== */
-/**
-* 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
-*    `em` units.
-* 2. Prevent iOS text size adjust after orientation change, without disabling
-*    user zoom.
-*/
-html {
-  font-size: 100%;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/**
-* Address `font-family` inconsistency between `textarea` and other form
-* elements.
-*/
-html, button, input, select, textarea {
-  font-family: sans-serif; }
-
-/**
-* Address margins handled incorrectly in IE 6/7.
-*/
-body {
-  margin: 0; }
-
-/* ==========================================================================
-Links
-========================================================================== */
-/**
-* Address `outline` inconsistency between Chrome and other browsers.
-*/
-a:focus {
-  outline: thin dotted; }
-
-/**
-* Improve readability when focused and also mouse hovered in all browsers.
-*/
-a:active, a:hover {
-  outline: 0; }
-
-/* ==========================================================================
-Typography
-========================================================================== */
-/**
-* Address font sizes and margins set differently in IE 6/7.
-* Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
-* and Chrome.
-*/
+/* line 62, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 3em; }
 
+/* line 65, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0; }
+  font-size: 2em; }
 
+/* line 68, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0; }
+  font-size: 1.8em; }
 
+/* line 71, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0; }
+  font-size: 1.6em; }
 
+/* line 74, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0; }
+  font-size: 1.4em; }
 
+/* line 77, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 h6 {
-  font-size: 0.67em;
-  margin: 2.33em 0; }
+  font-size: 1.2em; }
 
-/**
-* Address styling not present in IE 7/8/9, Safari 5, and Chrome.
-*/
-abbr[title] {
-  border-bottom: 1px dotted; }
+/* 将呈现为斜体的元素重置为正常文本 */
+/* line 81, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+address, cite, dfn, em, i, optgroup, var {
+  font-style: normal; }
 
-/**
-* Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
-*/
-b, strong {
-  font-weight: bold; }
+/* 清除引用元素的默认派生标识 */
+/* line 85, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '\0020'; }
 
-blockquote {
-  margin: 1em 40px; }
-
-/**
-* Address styling not present in Safari 5 and Chrome.
-*/
-dfn {
-  font-style: italic; }
-
-/**
-* Address differences between Firefox and other browsers.
-* Known issue: no IE 6/7 normalization.
-*/
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-/**
-* Address styling not present in IE 6/7/8/9.
-*/
-mark {
-  background: #ff0;
-  color: #000; }
-
-/**
-* Address margins set differently in IE 6/7.
-*/
-p, pre {
-  margin: 1em 0; }
-
-/**
-* Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
-*/
-code, kbd, pre, samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em; }
-
-/**
-* Improve readability of pre-formatted text in all browsers.
-*/
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-/**
-* Address CSS quotes not supported in IE 6/7.
-*/
-q {
-  quotes: none; }
-
-/**
-* Address `quotes` property not supported in Safari 4.
-*/
-q:before, q:after {
-  content: '';
-  content: none; }
-
-/**
-* Address inconsistent and variable font size in all browsers.
-*/
-small {
-  font-size: 80%; }
-
-/**
-* Prevent `sub` and `sup` affecting `line-height` in all browsers.
-*/
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-/* ==========================================================================
-Lists
-========================================================================== */
-/**
-* Address margins set differently in IE 6/7.
-*/
-dl, menu, ol, ul {
-  margin: 1em 0; }
-
-dd {
-  margin: 0 0 0 40px; }
-
-/**
-* Address paddings set differently in IE 6/7.
-*/
-menu, ol, ul {
-  padding: 0 0 0 40px; }
-
-/**
-* Correct list images handled incorrectly in IE 7.
-*/
-nav ul, nav ol {
-  list-style: none;
-  list-style-image: none; }
-
-/* ==========================================================================
-Embedded content
-========================================================================== */
-/**
-* 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
-* 2. Improve image quality when scaled in IE 7.
-*/
-img {
-  border: 0;
-  /* 1 */
-  -ms-interpolation-mode: bicubic;
-  /* 2 */ }
-
-/**
-* Correct overflow displayed oddly in IE 9.
-*/
-svg:not(:root) {
-  overflow: hidden; }
-
-/* ==========================================================================
-Figures
-========================================================================== */
-/**
-* Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
-*/
-figure {
-  margin: 0; }
-
-/* ==========================================================================
-Forms
-========================================================================== */
-/**
-* Correct margin displayed oddly in IE 6/7.
-*/
-form {
-  margin: 0; }
-
-/**
-* Define consistent border, margin, and padding.
-*/
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
-* 1. Correct color not being inherited in IE 6/7/8/9.
-* 2. Correct text not wrapping in Firefox 3.
-* 3. Correct alignment displayed oddly in IE 6/7.
-*/
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  white-space: normal;
-  /* 2 */
-  *margin-left: -7px;
-  /* 3 */ }
-
-/**
-* 1. Correct font size not being inherited in all browsers.
-* 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
-*    and Chrome.
-* 3. Improve appearance and consistency in all browsers.
-*/
-button, input, select, textarea {
-  font-size: 100%;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  vertical-align: baseline;
-  /* 3 */
-  *vertical-align: middle;
-  /* 3 */ }
-
-/**
-* Address Firefox 3+ setting `line-height` on `input` using `!important` in
-* the UA stylesheet.
-*/
-button, input {
-  line-height: normal; }
-
-/**
-* Address inconsistent `text-transform` inheritance for `button` and `select`.
-* All other form control elements do not inherit `text-transform` values.
-* Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
-* Correct `select` style inheritance in Firefox 4+ and Opera.
-*/
-button, select {
-  text-transform: none; }
-
-/**
-* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
-*    and `video` controls.
-* 2. Correct inability to style clickable `input` types in iOS.
-* 3. Improve usability and consistency of cursor style between image-type
-*    `input` and others.
-* 4. Remove inner spacing in IE 7 without affecting normal text inputs.
-*    Known issue: inner spacing remains in IE 6.
-*/
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-  *overflow: visible;
-  /* 4 */ }
-
-/**
-* Re-set default cursor for disabled elements.
-*/
-button[disabled], html input[disabled] {
-  cursor: default; }
-
-/**
-* 1. Address box sizing set to content-box in IE 8/9.
-* 2. Remove excess padding in IE 8/9.
-* 3. Remove excess padding in IE 7.
-*    Known issue: excess padding remains in IE 6.
-*/
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-  *height: 13px;
-  /* 3 */
-  *width: 13px;
-  /* 3 */ }
-
-/**
-* 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
-* 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
-*    (include `-moz` to future-proof).
-*/
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box; }
-
-/**
-* Remove inner padding and search cancel button in Safari 5 and Chrome
-* on OS X.
-*/
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
-* Remove inner padding and border in Firefox 3+.
-*/
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/**
-* 1. Remove default vertical scrollbar in IE 6/7/8/9.
-* 2. Improve readability and alignment in all browsers.
-*/
+/* 设置文本域滚动条需要时才出现 */
+/* line 89, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
 textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */ }
+  overflow: auto; }
 
-/* ==========================================================================
-Tables
-========================================================================== */
-/**
-* Remove most spacing between table cells.
-*/
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+/* 清除webkit下文本域的outline */
+/* line 93, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+textarea, input {
+  outline: none; }
 
+/* 设置mark元素有默认背景色 */
+/* line 97, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+mark {
+  background-color: #ffc40d; }
+
+/* 清除文本线条装饰 */
+/* line 101, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+ins, s, u, del {
+  text-decoration: none; }
+
+/* line 107, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA; }
+
+/* Placeholder Color */
+/* line 113, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+::-moz-placeholder {
+  color: #aaa; }
+
+/* line 114, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+::-webkit-input-placeholder {
+  color: #aaa; }
+
+/* line 115, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/base/_reset */
+::-ms-input-placeholder {
+  color: #aaa; }
+
+/* line 3, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn {
   display: inline-block;
   *display: inline;
@@ -412,7 +150,7 @@ table {
   height: 32px;
   line-height: 32px;
   background-color: #fb6310;
-  color: #FFF;
+  color: #fff;
   border: solid 0 transparent;
   border-radius: 3px;
   box-shadow: 2px 2px 3px #eee;
@@ -427,201 +165,272 @@ table {
   width: auto;
   overflow: visible; }
 
+/* line 25, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn:hover, .btn-hover {
+  color: #fff;
   text-decoration: none;
   background-color: #e55b00; }
 
+/* line 31, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn:active, .btn-active {
+  color: #fff;
   text-decoration: none;
   background-color: #db5700;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
+/* line 39, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn:disabled, .btn-dis {
+  color: #fff;
   text-decoration: none;
   background-color: #999;
   pointer-events: none; }
 
+/* line 46, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn-blue, .btn-primary {
   color: #fff;
   background-color: #3b83c0;
-  border-radius: radius;
+  border-radius: 3px;
   box-shadow: 2px 2px 3px #eee; }
+  /* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-blue:hover, .btn-blue.btn-hover, .btn-primary:hover, .btn-primary.btn-hover {
+    color: #fff;
     text-decoration: none;
     background-color: #2f6899; }
+  /* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-blue:active, .btn-blue.btn-active, .btn-primary:active, .btn-primary.btn-active {
+    color: #fff;
     text-decoration: none;
     background-color: #295b85;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-blue:disabled, .btn-blue.btn-dis, .btn-primary:disabled, .btn-primary.btn-dis {
+    color: #fff;
     text-decoration: none;
     pointer-events: none;
     background-color: #999; }
 
+/* line 50, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn-orange, .btn-buy {
   color: #fff;
   background-color: #ff8500;
-  border-radius: radius;
+  border-radius: 3px;
   box-shadow: 2px 2px 3px #eee; }
+  /* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-orange:hover, .btn-orange.btn-hover, .btn-buy:hover, .btn-buy.btn-hover {
+    color: #fff;
     text-decoration: none;
     background-color: #cc6a00; }
+  /* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-orange:active, .btn-orange.btn-active, .btn-buy:active, .btn-buy.btn-active {
+    color: #fff;
     text-decoration: none;
     background-color: #b35d00;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-orange:disabled, .btn-orange.btn-dis, .btn-buy:disabled, .btn-buy.btn-dis {
+    color: #fff;
     text-decoration: none;
     pointer-events: none;
     background-color: #999; }
 
+/* line 54, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn-teal, .btn-info {
   color: #fff;
   background-color: #02b5ad;
-  border-radius: radius;
+  border-radius: 3px;
   box-shadow: 2px 2px 3px #eee; }
+  /* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-teal:hover, .btn-teal.btn-hover, .btn-info:hover, .btn-info.btn-hover {
+    color: #fff;
     text-decoration: none;
     background-color: #01837d; }
+  /* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-teal:active, .btn-teal.btn-active, .btn-info:active, .btn-info.btn-active {
+    color: #fff;
     text-decoration: none;
     background-color: #016965;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-teal:disabled, .btn-teal.btn-dis, .btn-info:disabled, .btn-info.btn-dis {
+    color: #fff;
     text-decoration: none;
     pointer-events: none;
     background-color: #999; }
 
+/* line 58, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn-green, .btn-success {
   color: #fff;
   background-color: #38b87c;
-  border-radius: radius;
+  border-radius: 3px;
   box-shadow: 2px 2px 3px #eee; }
+  /* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-green:hover, .btn-green.btn-hover, .btn-success:hover, .btn-success.btn-hover {
+    color: #fff;
     text-decoration: none;
     background-color: #2c9162; }
+  /* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-green:active, .btn-green.btn-active, .btn-success:active, .btn-success.btn-active {
+    color: #fff;
     text-decoration: none;
     background-color: #267d54;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-green:disabled, .btn-green.btn-dis, .btn-success:disabled, .btn-success.btn-dis {
+    color: #fff;
     text-decoration: none;
     pointer-events: none;
     background-color: #999; }
 
+/* line 62, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn-green-light {
   color: #fff;
   background-color: #5bbd72;
-  border-radius: radius;
+  border-radius: 3px;
   box-shadow: 2px 2px 3px #eee; }
+  /* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-green-light:hover, .btn-green-light.btn-hover {
+    color: #fff;
     text-decoration: none;
     background-color: #42a359; }
+  /* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-green-light:active, .btn-green-light.btn-active {
+    color: #fff;
     text-decoration: none;
     background-color: #3a914f;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-green-light:disabled, .btn-green-light.btn-dis {
+    color: #fff;
     text-decoration: none;
     pointer-events: none;
     background-color: #999; }
 
+/* line 66, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn-red, .btn-danger {
   color: #fff;
   background-color: #f34540;
-  border-radius: radius;
+  border-radius: 3px;
   box-shadow: 2px 2px 3px #eee; }
+  /* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-red:hover, .btn-red.btn-hover, .btn-danger:hover, .btn-danger.btn-hover {
+    color: #fff;
     text-decoration: none;
     background-color: #f01610; }
+  /* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-red:active, .btn-red.btn-active, .btn-danger:active, .btn-danger.btn-active {
+    color: #fff;
     text-decoration: none;
     background-color: #d9130e;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-red:disabled, .btn-red.btn-dis, .btn-danger:disabled, .btn-danger.btn-dis {
+    color: #fff;
     text-decoration: none;
     pointer-events: none;
     background-color: #999; }
 
+/* line 70, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_button */
 .btn-black {
   color: #fff;
   background-color: #1b1b1d;
-  border-radius: radius;
+  border-radius: 3px;
   box-shadow: 2px 2px 3px #eee; }
+  /* line 30, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-black:hover, .btn-black.btn-hover {
+    color: #fff;
     text-decoration: none;
     background-color: #020203; }
+  /* line 36, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-black:active, .btn-black.btn-active {
+    color: #fff;
     text-decoration: none;
     background-color: black;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  /* line 44, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/helper/_mixin */
   .btn-black:disabled, .btn-black.btn-dis {
+    color: #fff;
     text-decoration: none;
     pointer-events: none;
     background-color: #999; }
 
+/**
+ *@desc: 通用表单输入元素
+ */
+/* line 7, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
 .input {
+  line-height: 18px;
   padding: 0.5em 0.6em;
-  display: inline-block;
   display: inline-block;
   *display: inline;
   *zoom: 1;
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 3px #eee;
-  border-radius: 4px;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  border-radius: 3px;
+  width: 120px;
+  /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-/*
-Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
-since IE8 won't execute CSS that contains a CSS3 selector.
-*/
-input:not([type]) {
-  padding: 0.5em 0.6em;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 3px #ddd;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
-/* May be able to remove this tweak as color inputs become more standardized across browsers. */
-input[type="color"] {
-  padding: 0.2em 0.5em; }
-
+/* line 23, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
 .input:focus {
   outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-  border-color: #129FEA;
-  box-shadow: 0 0 5px #51cbee;
-  webkit-box-shadow: 0 0 5px #51cbee;
-  moz-box-shadow: 0 0 5px #51cbee; }
+  border-color: #129fea;
+  box-shadow: 0 0 5px #3fb3f0;
+  webkit-box-shadow: 0 0 5px #3fb3f0;
+  moz-box-shadow: 0 0 5px #3fb3f0; }
 
-input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
-  outline: thin dotted #333;
-  outline: 1px auto #129FEA; }
+/*input 其他状态*/
+/* line 32, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-error {
+  border: solid 1px #f40; }
 
-.input-wrap {
-  position: relative; }
+/* line 35, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-error:focus {
+  outline: 0;
+  border-color: #f40;
+  webkit-box-shadow: 0 0 5px #ff6933;
+  moz-box-shadow: 0 0 5px #ff6933;
+  box-shadow: 0 0 5px #ff6933; }
 
-.input {
-  line-height: 18px; }
+/* line 42, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-suc {
+  border: solid 1px #43ba3e; }
+
+/* line 45, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-suc:focus {
+  outline: 0;
+  border-color: #43ba3e;
+  webkit-box-shadow: 0 0 5px #65ca61;
+  moz-box-shadow: 0 0 5px #65ca61;
+  box-shadow: 0 0 5px #65ca61; }
+
+/*input 其他大小*/
+/* line 54, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-xsmall {
+  width: 60px; }
+
+/* line 57, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-small {
+  width: 100px; }
+
+/* line 60, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-large {
+  width: 150px; }
+
+/* line 63, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/_input */
+.inp-xlarge {
+  width: 200px; }
 
 /*!
  * ui-dialog.css
@@ -632,6 +441,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
  * This is licensed under the GNU LGPL, version 2.1 or later.
  * For details, see: http://www.gnu.org/licenses/lgpl-2.1.html
  */
+/* line 10, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog {
   *zoom: 1;
   _float: left;
@@ -651,17 +461,21 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   -webkit-transition: -webkit-transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out; }
 
+/* line 29, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-show .ui-dialog {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1); }
 
+/* line 34, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-focus .ui-dialog {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); }
 
+/* line 37, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-modal .ui-dialog {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 256px rgba(255, 255, 255, 0.3); }
 
+/* line 40, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-grid {
   width: auto;
   margin: 0;
@@ -670,16 +484,19 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   border-spacing: 0;
   background: transparent; }
 
+/* line 50, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-header, .ui-dialog-body, .ui-dialog-footer {
   padding: 0;
   border: 0 none;
   text-align: left;
   background: transparent; }
 
+/* line 56, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-header {
   white-space: nowrap;
   border-bottom: 1px solid #E5E5E5; }
 
+/* line 60, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-close {
   position: relative;
   _position: absolute;
@@ -701,6 +518,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   border: 0;
   -webkit-appearance: none; }
 
+/* line 82, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-close:hover, .ui-dialog-close:focus {
   color: #000000;
   text-decoration: none;
@@ -709,6 +527,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   opacity: 0.5;
   filter: alpha(opacity=50); }
 
+/* line 90, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-title {
   margin: 0;
   line-height: 1.42857;
@@ -720,10 +539,12 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   font-weight: bold;
   cursor: default; }
 
+/* line 101, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-body {
   padding: 20px;
   text-align: center; }
 
+/* line 105, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-content {
   display: inline-block;
   position: relative;
@@ -732,9 +553,11 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   *display: inline;
   text-align: left; }
 
+/* line 113, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer {
   padding: 0 20px 20px 20px; }
 
+/* line 116, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-statusbar {
   float: left;
   margin-right: 20px;
@@ -744,20 +567,25 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   color: #888;
   white-space: nowrap; }
 
+/* line 125, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-statusbar label:hover {
   color: #333; }
 
+/* line 129, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-statusbar input, .ui-dialog-statusbar .label {
   vertical-align: middle; }
 
+/* line 132, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-button {
   float: right;
   white-space: nowrap; }
 
+/* line 136, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button + button {
   margin-bottom: 0;
   margin-left: 5px; }
 
+/* line 140, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button {
   width: auto;
   overflow: visible;
@@ -781,21 +609,25 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   -o-user-select: none;
   user-select: none; }
 
+/* line 164, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
+/* line 171, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button:hover, .ui-dialog-footer button:focus {
   color: #333333;
   text-decoration: none; }
 
+/* line 176, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button:active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
+/* line 182, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button[disabled] {
   pointer-events: none;
   cursor: not-allowed;
@@ -804,48 +636,60 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+/* line 191, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button {
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc; }
 
+/* line 199, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button:hover, .ui-dialog-footer button:focus, .ui-dialog-footer button:active {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad; }
 
+/* line 205, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button:active {
   background-image: none; }
 
+/* line 212, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button[disabled], .ui-dialog-footer button[disabled]:hover, .ui-dialog-footer button[disabled]:focus, .ui-dialog-footer button[disabled]:active {
   background-color: #ffffff;
   border-color: #cccccc; }
 
+/* line 217, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button.ui-dialog-autofocus {
   color: #ffffff;
   background-color: #428bca;
   border-color: #357ebd; }
 
+/* line 225, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button.ui-dialog-autofocus:hover, .ui-dialog-footer button.ui-dialog-autofocus:focus, .ui-dialog-footer button.ui-dialog-autofocus:active {
   color: #ffffff;
   background-color: #3276b1;
   border-color: #285e8e; }
 
+/* line 231, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-footer button.ui-dialog-autofocus:active {
   background-image: none; }
 
+/* line 236, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-top-left .ui-dialog, .ui-popup-top .ui-dialog, .ui-popup-top-right .ui-dialog {
   top: -8px; }
 
+/* line 241, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-bottom-left .ui-dialog, .ui-popup-bottom .ui-dialog, .ui-popup-bottom-right .ui-dialog {
   top: 8px; }
 
+/* line 246, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-left-top .ui-dialog, .ui-popup-left .ui-dialog, .ui-popup-left-bottom .ui-dialog {
   left: -8px; }
 
+/* line 251, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-right-top .ui-dialog, .ui-popup-right .ui-dialog, .ui-popup-right-bottom .ui-dialog {
   left: 8px; }
 
+/* line 256, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-arrow-a, .ui-dialog-arrow-b {
   position: absolute;
   display: none;
@@ -856,95 +700,121 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   _filter: chroma(color=#FF3FFF);
   border: 8px dashed transparent; }
 
+/* line 267, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-follow .ui-dialog-arrow-a, .ui-popup-follow .ui-dialog-arrow-b {
   display: block; }
 
+/* line 272, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-top-left .ui-dialog-arrow-a, .ui-popup-top .ui-dialog-arrow-a, .ui-popup-top-right .ui-dialog-arrow-a {
   bottom: -16px;
   border-top: 8px solid #7C7C7C; }
 
+/* line 278, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-top-left .ui-dialog-arrow-b, .ui-popup-top .ui-dialog-arrow-b, .ui-popup-top-right .ui-dialog-arrow-b {
   bottom: -15px;
   border-top: 8px solid #fff; }
 
+/* line 283, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-top-left .ui-dialog-arrow-a, .ui-popup-top-left .ui-dialog-arrow-b {
   left: 15px; }
 
+/* line 287, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-top .ui-dialog-arrow-a, .ui-popup-top .ui-dialog-arrow-b {
   left: 50%;
   margin-left: -8px; }
 
+/* line 292, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-top-right .ui-dialog-arrow-a, .ui-popup-top-right .ui-dialog-arrow-b {
   right: 15px; }
 
+/* line 297, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-bottom-left .ui-dialog-arrow-a, .ui-popup-bottom .ui-dialog-arrow-a, .ui-popup-bottom-right .ui-dialog-arrow-a {
   top: -16px;
   border-bottom: 8px solid #7C7C7C; }
 
+/* line 303, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-bottom-left .ui-dialog-arrow-b, .ui-popup-bottom .ui-dialog-arrow-b, .ui-popup-bottom-right .ui-dialog-arrow-b {
   top: -15px;
   border-bottom: 8px solid #fff; }
 
+/* line 308, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-bottom-left .ui-dialog-arrow-a, .ui-popup-bottom-left .ui-dialog-arrow-b {
   left: 15px; }
 
+/* line 312, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-bottom .ui-dialog-arrow-a, .ui-popup-bottom .ui-dialog-arrow-b {
   margin-left: -8px;
   left: 50%; }
 
+/* line 317, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-bottom-right .ui-dialog-arrow-a, .ui-popup-bottom-right .ui-dialog-arrow-b {
   right: 15px; }
 
+/* line 322, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-left-top .ui-dialog-arrow-a, .ui-popup-left .ui-dialog-arrow-a, .ui-popup-left-bottom .ui-dialog-arrow-a {
   right: -16px;
   border-left: 8px solid #7C7C7C; }
 
+/* line 328, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-left-top .ui-dialog-arrow-b, .ui-popup-left .ui-dialog-arrow-b, .ui-popup-left-bottom .ui-dialog-arrow-b {
   right: -15px;
   border-left: 8px solid #fff; }
 
+/* line 333, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-left-top .ui-dialog-arrow-a, .ui-popup-left-top .ui-dialog-arrow-b {
   top: 15px; }
 
+/* line 337, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-left .ui-dialog-arrow-a, .ui-popup-left .ui-dialog-arrow-b {
   margin-top: -8px;
   top: 50%; }
 
+/* line 342, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-left-bottom .ui-dialog-arrow-a, .ui-popup-left-bottom .ui-dialog-arrow-b {
   bottom: 15px; }
 
+/* line 347, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-right-top .ui-dialog-arrow-a, .ui-popup-right .ui-dialog-arrow-a, .ui-popup-right-bottom .ui-dialog-arrow-a {
   left: -16px;
   border-right: 8px solid #7C7C7C; }
 
+/* line 353, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-right-top .ui-dialog-arrow-b, .ui-popup-right .ui-dialog-arrow-b, .ui-popup-right-bottom .ui-dialog-arrow-b {
   left: -15px;
   border-right: 8px solid #fff; }
 
+/* line 358, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-right-top .ui-dialog-arrow-a, .ui-popup-right-top .ui-dialog-arrow-b {
   top: 15px; }
 
+/* line 362, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-right .ui-dialog-arrow-a, .ui-popup-right .ui-dialog-arrow-b {
   margin-top: -8px;
   top: 50%; }
 
+/* line 367, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-popup-right-bottom .ui-dialog-arrow-a, .ui-popup-right-bottom .ui-dialog-arrow-b {
   bottom: 15px; }
 
 @-webkit-keyframes ui-dialog-loading {
+  /* line 373, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
   0% {
     -webkit-transform: rotate(0deg); }
 
+  /* line 376, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
   100% {
     -webkit-transform: rotate(360deg); } }
 
 @keyframes ui-dialog-loading {
+  /* line 381, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
   0% {
     transform: rotate(0deg); }
 
+  /* line 384, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
   100% {
     transform: rotate(360deg); } }
 
+/* line 389, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-loading {
   vertical-align: middle;
   position: relative;
@@ -960,6 +830,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   text-indent: -999em;
   color: #666; }
 
+/* line 404, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-loading {
   width: 100% \9;
   text-indent: 0\9;
@@ -967,6 +838,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   text-align: center\9;
   font-size: 12px\9; }
 
+/* line 412, /Users/liyongxiang/百度云同步盘/ape/startup/sting/src/scss/component/ui-dialog */
 .ui-dialog-loading::after {
   position: absolute;
   content: '';
@@ -980,3 +852,6 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   transform: rotate(360deg);
   animation: ui-dialog-loading 1.5s infinite linear;
   display: none\9; }
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UvX3Jlc2V0LnNjc3MiLCJjb21wb25lbnQvX2J1dHRvbi5zY3NzIiwiaGVscGVyL19taXhpbi5zY3NzIiwiaGVscGVyL192YXJpYWJsZS5zY3NzIiwiY29tcG9uZW50L19pbnB1dC5zY3NzIiwiY29tcG9uZW50L3VpLWRpYWxvZy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBUUE7RUFDSSxZQUFXO0VBQ1gsT0FBTTtFQUNOLFdBQVU7Ozs7QUFHZCxNQUFNLElBQUksSUFBSSxJQUFJLElBQUksSUFBSSxJQUFJLElBQUksSUFBSSxJQUFJLElBQUksUUFBUSxNQUFNLFVBQVUsUUFBUSxPQUFPLFVBQVUsUUFBUSxHQUFHLFlBQVksSUFBSSxJQUFJLEtBQUs7RUFDL0gsUUFBTztFQUNQLFNBQVE7Ozs7QUFHWixNQUFNLE9BQU8sVUFBVSxRQUFRLFFBQVEsS0FBSyxJQUFJLE1BQU0sS0FBSyxNQUFNLFVBQVU7RUFDdkUsYUFBWTtFQUNaLGFBQVk7Ozs7QUFHaEI7RUFDSSxpQkFBZ0I7RUFDaEIsZ0JBQWU7RUFDZixZQUFXOzs7O0FBR2YsU0FBUztFQUNMLFlBQVc7RUFDWCxhQUFZOzs7O0FBR2hCLElBQUksSUFBSTtFQUNKLFlBQVc7Ozs7QUFHZixVQUFVO0VBQ04sUUFBTzs7OztBQUdYLEtBQUssUUFBUSxPQUFPLFVBQVUsUUFBUTtFQUNsQyxnQkFBZTs7OztBQUduQixTQUFTLE9BQU8sUUFBUSxRQUFRLFNBQVMsS0FBSyxRQUFRLFlBQVksUUFBUSxTQUFTO0VBQy9FLFNBQVE7Ozs7QUFHWixPQUFPLFFBQVE7RUFDWCxTQUFRO0VBQ1IsVUFBUztFQUNULE9BQU07Ozs7QUFHVixJQUFJLElBQUksSUFBSSxJQUFJLElBQUksSUFBSSxPQUFPLFVBQVUsUUFBUSxRQUFRO0VBQ3JELFdBQVU7OztBQUdkO0VBQ0ksV0FBVTs7O0FBRWQ7RUFDSSxXQUFVOzs7QUFFZDtFQUNJLFdBQVU7OztBQUVkO0VBQ0ksV0FBVTs7O0FBRWQ7RUFDSSxX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R2Ysa0JBQWtCO0VBQ2QsVUFBVTtFQUNWLFNBQVM7RUFDVCxPQUFPO0VBQ1AsUUFBUTtFQUNSLFFBQVE7RUFDUixlQUFlO0VBQ2YsWUFBMEI7RUFDMUIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsV0FBVztFQUNYLFNBQVMiLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuKiogQ3NzIFJlc2V0XG4qKiBWZXJzaW9uOiAzLjAuMFxuKiogQXV0aG9yIEpveSBEdSjpo5jpm7bpm77pm6gpXG4qKiBFZGl0IGF0IDIwMTIuMy4xXG4qL1xuXG4vKiDpmLLmraLnlKjmiLfoh6rlrprkuYnnvZHpobXog4zmma/lj4rmloflrZfpopzoibLjgIHlpKflsI/lvbHlk40gKi9cbmh0bWx7XG4gICAgYmFja2dyb3VuZDojZmZmO1xuICAgIGNvbG9yOiMzMzM7XG4gICAgZm9udC1zaXplOjEycHg7XG59XG4vKiDmuIXpmaTmn5DkupvlhYPntKDlnKjkuI3lkIzmtY/op4jlmajkuIvlhoXlpJbooaXnmb3kuI3lkIzpgKDmiJDnmoTlvbHlk40gKi9cbmJvZHksdWwsb2wsZGwsZGQsaDEsaDIsaDMsaDQsaDUsaDYsZmlndXJlLGZvcm0sZmllbGRzZXQsbGVnZW5kLGlucHV0LHRleHRhcmVhLGJ1dHRvbixwLGJsb2NrcXVvdGUsdGgsdGQscHJlLHhtcHtcbiAgICBtYXJnaW46MDtcbiAgICBwYWRkaW5nOjA7XG59XG4vKiDorr7nva7pu5jorqTlrZfpm4blj4rooYzpq5jvvIzooajljZXlj4rmn5DkupvnibnmrorlhYPntKDkuI3nu6fmib/npZblhYhmb25055u45YWz5bGe5oCnICovXG5ib2R5LGlucHV0LHRleHRhcmVhLGJ1dHRvbixzZWxlY3QscHJlLHR0LGNvZGUsa2JkLHNhbXAsb3B0Z3JvdXAsb3B0aW9ue1xuICAgIGxpbmUtaGVpZ2h0OjEuNTtcbiAgICBmb250LWZhbWlseTphcmlhbCwgJ1xcNWI4YlxcNGY1MycsICdcXDVmYWVcXDhmNmZcXDk2YzVcXDllZDEnLCB2ZXJkYW5hLCBoZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XG59XG4vKiDmuIXpmaTljZXlhYPmoLzovrnot53lubborqnovrnmoYblkIjlubYgKi9cbnRhYmxle1xuICAgIGJvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTtcbiAgICBib3JkZXItc3BhY2luZzowO1xuICAgIHRleHQtYWxpZ246bGVmdDtcbn1cbi8qIOiuvue9rmNhcHRpb27nu6fmib/niLblhYPntKDnmoTlr7npvZDmlrnlvI/vvIzlkIzml7bkv67lpI1JReS4i3Ro5LiN57un5om/54i25YWD57Sg5a+56b2Q5pa55byPYnVnICovXG5jYXB0aW9uLHRoe1xuICAgIHRleHQtYWxpZ246aW5oZXJpdDtcbiAgICBmb250LXdlaWdodDo0MDA7XG59XG4vKiDmuIXpmaTliJfooajpu5jorqTluo/lj7cgKi9cbnVsLG9sLG1lbnV7XG4gICAgbGlzdC1zdHlsZTpub25lO1xufVxuLyog5riF6Zmk6buY6K6k6L655qGGICovXG5maWVsZHNldCxpbWd7XG4gICAgYm9yZGVyOjAgbm9uZTtcbn1cbi8qIOiuvue9ruafkOS6m+WFg+e0oOWxheS4reWvuem9kCAqL1xuaW1nLG9iamVjdCxpbnB1dCx0ZXh0YXJlYSxidXR0b24sc2VsZWN0e1xuICAgIHZlcnRpY2FsLWFsaWduOm1pZGRsZTtcbn1cbi8qIOiuvue9ruafkOS6m0hUTUw15YWD57Sg5Li65Z2X5YWD57SgICovXG5hcnRpY2xlLGFzaWRlLGZvb3RlcixoZWFkZXIsc2VjdGlvbixuYXYsZmlndXJlLGZpZ2NhcHRpb24saGdyb3VwLGRldGFpbHMsbWVudXtcbiAgICBkaXNwbGF5OmJsb2NrO1xufVxuLyog6K6+572uSFRNTDXmlrDlop7lqpLkvZPlhYPntKDkuI5pbWcsb2JqZWN05L+d5oyB5LiA6Ie0ICovXG5hdWRpbyxjYW52YXMsdmlkZW97XG4gICAgZGlzcGxheTpibG9jaztcbiAgICAqZGlzcGxheTppbmxpbmU7XG4gICAgKnpvb206MTtcbn1cbi8qIOa4hemZpOafkOS6m+WFg+e0oOS4jee7p+aJv+elluWFiOWFg+e0oGZvbnQtc2l6ZeeahOW9seWTjSAqL1xuaDEsaDIsaDMsaDQsaDUsaDYsaW5wdXQsdGV4dGFyZWEsYnV0dG9uLHNlbGVjdCxzbWFsbHtcbiAgICBmb250LXNpemU6MTAwJTtcbn1cblxuaDEge1xuICAgIGZvbnQtc2l6ZTozZW07XG59XG5oMiB7XG4gICAgZm9udC1zaXplOjJlbTtcbn1cbmgzIHtcbiAgICBmb250LXNpemU6MS44ZW07XG59XG5oNCB7XG4gICAgZm9udC1zaXplOjEuNmVtO1xufVxuaDUge1xuICAgIGZvbnQtc2l6ZToxLjRlbTtcbn1cbmg2IHtcbiAgICBmb250LXNpemU6MS4yZW07XG59XG4vKiDlsIblkYjnjrDkuLrmlpzkvZPnmoTlhYPntKDph43nva7kuLrmraPluLjmlofmnKwgKi9cbmFkZHJlc3MsY2l0ZSxkZm4sZW0saSxvcHRncm91cCx2YXJ7XG4gICAgZm9udC1zdHlsZTpub3JtYWw7XG59XG4vKiDmuIXpmaTlvJXnlKjlhYPntKDnmoTpu5jorqTmtL7nlJ/moIfor4YgKi9cbmJsb2NrcXVvdGU6YmVmb3JlLGJsb2NrcXVvdGU6YWZ0ZXIscTpiZWZvcmUscTphZnRlcntcbiAgICBjb250ZW50OidcXDAwMjAnO1xufVxuLyog6K6+572u5paH5pys5Z+f5rua5Yqo5p2h6ZyA6KaB5pe25omN5Ye6546wICovXG50ZXh0YXJlYXtcbiAgICBvdmVyZmxvdzphdXRvO1xufVxuLyog5riF6Zmkd2Via2l05LiL5paH5pys5Z+f55qEb3V0bGluZSAqL1xudGV4dGFyZWEsaW5wdXR7XG4gICAgb3V0bGluZTpub25lO1xufVxuLyog6K6+572ubWFya+WFg+e0oOaciem7mOiupOiDjOaZr+iJsiAqL1xubWFya3tcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiNmZmM0MGQ7XG59XG4vKiDmuIXpmaTmlofmnKznur/mnaHoo4XppbAgKi9cbmlucyxzLHUsZGVse1xuICAgIHRleHQtZGVjb3JhdGlvbjpub25lO1xufVxuXG5pbnB1dFt0eXBlPVwiZmlsZVwiXTpmb2N1cyxcbmlucHV0W3R5cGU9XCJyYWRpb1wiXTpmb2N1cyxcbmlucHV0W3R5cGU9XCJjaGVja2JveFwiXTpmb2N1cyB7XG4gICAgb3V0bGluZTogdGhpbiBkb3R0ZWQgIzMzMztcbiAgICBvdXRsaW5lOiAxcHggYXV0byAjMTI5RkVBO1xufVxuXG4vKiBQbGFjZWhvbGRlciBDb2xvciAqL1xuOjotbW96LXBsYWNlaG9sZGVyIHtjb2xvcjogI2FhYTt9XG46Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIge2NvbG9yOiAjYWFhO31cbjo6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHtjb2xvcjojYWFhO30iLCJAY2hhcnNldCBcInV0Zi04XCI7XG5cbi5idG57XG5cdEBpbmNsdWRlIGlubGluZS1ibG9jaztcblx0Zm9udC1zaXplOiAxNHB4O1xuXHRwYWRkaW5nOiAwIDE1cHg7XG5cdGhlaWdodDogMzJweDtcblx0bGluZS1oZWlnaHQ6IDMycHg7XG5cdGJhY2tncm91bmQtY29sb3I6ICRjb2xvci1kZWZhdWx0O1xuXHRjb2xvcjogI2ZmZjtcblx0Ym9yZGVyOiBzb2xpZCAwIHRyYW5zcGFyZW50O1xuXHRib3JkZXItcmFkaXVzOiAkYnRuLXJhZGl1cztcblx0Ym94LXNoYWRvdzogMnB4IDJweCAzcHggI2VlZTtcblx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHR2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuXHR0ZXh0LWRlY29yYXRpb246IG5vbmU7XG5cdGN1cnNvcjogcG9pbnRlcjtcblx0d2hpdGUtc3BhY2U6IG5vd3JhcDtcblx0YmFja2dyb3VuZC1pbWFnZTogbm9uZTsgLypSZXNldCB1bnVzdWFsIEZpcmVmb3gtb24tQW5kcm9pZCBkZWZhdWx0IHN0eWxlOyBzZWUgaHR0cHM6Ly9naXRodWIuY29tL25lY29sYXMvbm9ybWFsaXplLmNzcy9pc3N1ZXMvMjE0Ki9cblx0LypSZXNldCB0aGUgZXh0cmEgcGFkZGluZyBpbiBpZSBidXR0b24gZWxlbWVudCovXG5cdHdpZHRoOiBhdXRvO1xuXHRvdmVyZmxvdzogdmlzaWJsZTtcbn1cblxuLmJ0bjpob3ZlciwgLmJ0bi1ob3Zlcntcblx0Y29sb3I6ICNmZmY7XG5cdHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblx0YmFja2dyb3VuZC1jb2xvcjogI2U1NWIwMDtcbn1cblxuLmJ0bjphY3RpdmUsIC5idG4tYWN0aXZle1xuXHRjb2xvcjogI2ZmZjtcblx0dGV4dC1kZWNvcmF0aW9uOiBub25lO1xuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjZGI1NzAwO1xuICAgIC13ZWJraXQtYm94LXNoYWRvdzogaW5zZXQgMCAzcHggNXB4IHJnYmEoMCwwLDAsLjEyNSk7XG5cdGJveC1zaGFkb3c6IGluc2V0IDAgM3B4IDVweCByZ2JhKDAsMCwwLC4xMjUpO1xufVxuXG4uYnRuOmRpc2FibGVkLCAuYnRuLWRpc3tcblx0Y29sb3I6ICNmZmY7XG5cdHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblx0YmFja2dyb3VuZC1jb2xvcjogIzk5OTtcblx0cG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbi5idG4tYmx1ZSwgLmJ0bi1wcmltYXJ5e1xuXHRAaW5jbHVkZSBidG4tdmFyaWFudCgkZm9udC1jb2xvci13aGl0ZSwgJGNvbG9yLWJsdWUsICRidG4tcmFkaXVzKTtcbn1cblxuLmJ0bi1vcmFuZ2UsIC5idG4tYnV5e1xuXHRAaW5jbHVkZSBidG4tdmFyaWFudCgkZm9udC1jb2xvci13aGl0ZSwgJGNvbG9yLW9yYW5nZSwgJGJ0bi1yYWRpdXMpO1xufVxuXG4uYnRuLXRlYWwsIC5idG4taW5mb3tcblx0QGluY2x1ZGUgYnRuLXZhcmlhbnQoJGZvbnQtY29sb3Itd2hpdGUsICRjb2xvci10ZWFsLCAkYnRuLXJhZGl1cyk7XG59XG5cbi5idG4tZ3JlZW4sIC5idG4tc3VjY2Vzc3tcblx0QGluY2x1ZGUgYnRuLXZhcmlhbnQoJGZvbnQtY29sb3Itd2hpdGUsICRjb2xvci1ncmVlbiwgJGJ0bi1yYWRpdXMpO1xufVxuXG4uYnRuLWdyZWVuLWxpZ2h0e1xuXHRAaW5jbHVkZSBidG4tdmFyaWFudCgkZm9udC1jb2xvci13aGl0ZSwgJGNvbG9yLWdyZWVuLWxpZ2h0LCAkYnRuLXJhZGl1cyk7XG59XG5cbi5idG4tcmVkLCAuYnRuLWRhbmdlcntcblx0QGluY2x1ZGUgYnRuLXZhcmlhbnQoJGZvbnQtY29sb3Itd2hpdGUsICRjb2xvci1yZWQsICRidG4tcmFkaXVzKTtcbn1cblxuLmJ0bi1ibGFja3tcblx0QGluY2x1ZGUgYnRuLXZhcmlhbnQoJGZvbnQtY29sb3Itd2hpdGUsICRjb2xvci1ibGFjaywgJGJ0bi1yYWRpdXMpO1xufVxuIiwiQG1peGluIGJ0bi12YXJpYW50KCRjb2xvciwgJGJnLCAkcmFkaXVzKSB7XG4gICAgY29sb3I6ICRjb2xvcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkYmc7XG4gICAgYm9yZGVyLXJhZGl1czogJHJhZGl1cztcbiAgICBib3gtc2hhZG93OiAycHggMnB4IDNweCAjZWVlO1xuXG4gICAgQGlmICRzdXBwb3J0LW9sZC1pZXtcbiAgICAgICAgJjpob3ZlciwgJi1ob3ZlcntcbiAgICAgICAgICAgIGNvbG9yOiAkY29sb3I7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrZW4oJGJnLCAxMCUpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUsICYtYWN0aXZle1xuICAgICAgICAgICAgY29sb3I6ICRjb2xvcjtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IGRhcmtlbigkYmcsIDE1JSk7XG4gICAgICAgICAgICAtd2Via2l0LWJveC1zaGFkb3c6IGluc2V0IDAgM3B4IDVweCByZ2JhKDAsMCwwLC4xMjUpO1xuICAgICAgICAgICAgYm94LXNoYWRvdzogaW5zZXQgMCAzcHggNXB4IHJnYmEoMCwwLDAsLjEyNSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmRpc2FibGVkLCAmLWRpc3tcbiAgICAgICAgICAgIGNvbG9yOiAkY29sb3I7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgICBwb2ludGVyLWV2ZW50czpub25lO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzk5OTtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICB9IEBlbHNlIHtcbiAgICAgICAgJjpob3ZlciwgJi5idG4taG92ZXJ7XG4gICAgICAgICAgICBjb2xvcjogJGNvbG9yO1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZGFya2VuKCRiZywgMTAlKTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlLCAmLmJ0bi1hY3RpdmV7XG4gICAgICAgICAgICBjb2xvcjogJGNvbG9yO1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZGFya2VuKCRiZywgMTUlKTtcbiAgICAgICAgICAgIC13ZWJraXQtYm94LXNoYWRvdzogaW5zZXQgMCAzcHggNXB4IHJnYmEoMCwwLDAsLjEyNSk7XG4gICAgICAgICAgICBib3gtc2hhZG93OiBpbnNldCAwIDNweCA1cHggcmdiYSgwLDAsMCwuMTI1KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6ZGlzYWJsZWQsICYuYnRuLWRpc3tcbiAgICAgICAgICAgIGNvbG9yOiAkY29sb3I7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgICBwb2ludGVyLWV2ZW50czpub25lO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzk5OTtcbiAgICAgICAgfVxuICAgIH1cbiAgICBcbn1cblxuQG1peGluIGlubGluZS1ibG9jayB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgICpkaXNwbGF5OiBpbmxpbmU7XG4gICAgKnpvb206IDE7XG59XG4iLCIvL2lmIHN1cHBvcnQgaWU2LDdcbiRzdXBwb3J0LW9sZC1pZTogZmFsc2UgIWRlZmF1bHQ7XG5cbiRjb2xvci1kZWZhdWx0OiAjZmI2MzEwICFkZWZhdWx0O1xuJGNvbG9yLW9yYW5nZTogI2ZmODUwMCAhZGVmYXVsdDtcbiRjb2xvci1ibHVlOiAjM2I4M2MwICFkZWZhdWx0O1xuJGNvbG9yLXllbGxvdzogI2ZmYWIxOSAhZGVmYXVsdDtcbiRjb2xvci1ibHVlLWxpZ2h0OiAjNDU4YWM2ICFkZWZhdWx0O1xuJGNvbG9yLWdyZWVuOiAjMzhiODdjICFkZWZhdWx0O1xuJGNvbG9yLWdyZWVuLWxpZ2h0OiAjNWJiZDcyICFkZWZhdWx0O1xuJGNvbG9yLXdhcm5pbmc6ICNkOTVjNWMgIWRlZmF1bHQ7XG4kY29sb3ItYmxhY2s6ICMxYjFiMWQgIWRlZmF1bHQ7XG4kY29sb3ItcHVycGxlOiAjNTY0ZjhhICFkZWZhdWx0O1xuJGNvbG9yLXRlYWw6ICMwMmI1YWQgIWRlZmF1bHQ7XG4kY29sb3ItcmVkOiAjZjM0NTQwICFkZWZhdWx0O1xuJGNvbG9yLXdoaXRlOiAjZmZmICFkZWZhdWx0O1xuJGZvbnQtY29sb3Itd2hpdGU6ICNmZmYgIWRlZmF1bHQ7XG5cbiRidG4tcmFkaXVzOiAzcHggIWRlZmF1bHQ7XG5cbiRmb250LXNpemU6IDE0cHggIWRlZmF1bHQ7XG4kZm9udC1zaXplLWJnOiAxOHB4ICFkZWZhdWx0O1xuJGZvbnQtc2l6ZS1zbWFsbDogMTFweCAhZGVmYXVsdDtcblxuJGNvbG9yLWlucDogIzEyOWZlYSAhZGVmYXVsdDtcbiRjb2xvci1pbnAtZXJyb3I6ICNmNDAgIWRlZmF1bHQ7XG4kY29sb3ItaW5wLXN1YzogIzQzYmEzZSAhZGVmYXVsdDtcbiRpbnAtcmFkaXVzOiAzcHggIWRlZmF1bHQ7IiwiLyoqXG4gKkBkZXNjOiDpgJrnlKjooajljZXovpPlhaXlhYPntKBcbiAqL1xuXG5AY2hhcnNldCBcInV0Zi04XCI7XG5cbi5pbnB1dCB7XG4gICAgbGluZS1oZWlnaHQ6IDE4cHg7XG4gICAgcGFkZGluZzogMC41ZW0gMC42ZW07XG4gICAgQGluY2x1ZGUgaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XG4gICAgYm94LXNoYWRvdzogaW5zZXQgMCAxcHggM3B4ICNlZWU7XG4gICAgYm9yZGVyLXJhZGl1czogM3B4O1xuICAgIHdpZHRoOiAxMjBweDtcbiAgICAvKiAtd2Via2l0LWJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgLW1vei1ib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7ICovXG4gICAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgLjJzIGVhc2UtaW4tb3V0O1xuICAgIC1tb3otdHJhbnNpdGlvbjogYWxsIC4ycyBlYXNlLWluLW91dDtcbiAgICB0cmFuc2l0aW9uOiBhbGwgLjJzIGVhc2UtaW4tb3V0O1xufVxuXG4uaW5wdXQ6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gICAgYm9yZGVyLWNvbG9yOiAkY29sb3ItaW5wO1xuICAgIGJveC1zaGFkb3c6IDAgMCA1cHggbGlnaHRlbigkY29sb3ItaW5wLCAxMCUpO1xuICAgIHdlYmtpdC1ib3gtc2hhZG93OiAwIDAgNXB4IGxpZ2h0ZW4oJGNvbG9yLWlucCwgMTAlKTtcbiAgICBtb3otYm94LXNoYWRvdzogMCAwIDVweCBsaWdodGVuKCRjb2xvci1pbnAsIDEwJSk7XG59XG5cbi8qaW5wdXQg5YW25LuW54q25oCBKi9cbi5pbnAtZXJyb3J7XG4gICAgYm9yZGVyOiBzb2xpZCAxcHggJGNvbG9yLWlucC1lcnJvcjtcbn1cbi5pbnAtZXJyb3I6Zm9jdXN7XG4gICAgb3V0bGluZTogMDtcbiAgICBib3JkZXItY29sb3I6ICRjb2xvci1pbnAtZXJyb3I7XG4gICAgd2Via2l0LWJveC1zaGFkb3c6IDAgMCA1cHggbGlnaHRlbigkY29sb3ItaW5wLWVycm9yLCAxMCUpO1xuICAgIG1vei1ib3gtc2hhZG93OiAwIDAgNXB4IGxpZ2h0ZW4oJGNvbG9yLWlucC1lcnJvciwgMTAlKTtcbiAgICBib3gtc2hhZG93OiAwIDAgNXB4IGxpZ2h0ZW4oJGNvbG9yLWlucC1lcnJvciwgMTAlKTtcbn1cbi5pbnAtc3Vje1xuICAgIGJvcmRlcjogc29saWQgMXB4ICRjb2xvci1pbnAtc3VjO1xufVxuLmlucC1zdWM6Zm9jdXN7XG4gICAgb3V0bGluZTogMDtcbiAgICBib3JkZXItY29sb3I6ICRjb2xvci1pbnAtc3VjO1xuICAgIHdlYmtpdC1ib3gtc2hhZG93OiAwIDAgNXB4IGxpZ2h0ZW4oJGNvbG9yLWlucC1zdWMsIDEwJSk7XG4gICAgbW96LWJveC1zaGFkb3c6IDAgMCA1cHggbGlnaHRlbigkY29sb3ItaW5wLXN1YywgMTAlKTtcbiAgICBib3gtc2hhZG93OiAwIDAgNXB4IGxpZ2h0ZW4oJGNvbG9yLWlucC1zdWMsIDEwJSk7XG59XG5cbi8qaW5wdXQg5YW25LuW5aSn5bCPKi9cbi5pbnAteHNtYWxse1xuICAgIHdpZHRoOiA2MHB4O1xufVxuLmlucC1zbWFsbHtcbiAgICB3aWR0aDogMTAwcHg7XG59XG4uaW5wLWxhcmdle1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi5pbnAteGxhcmdle1xuICAgIHdpZHRoOiAyMDBweDtcbn0iLCIvKiFcbiAqIHVpLWRpYWxvZy5jc3NcbiAqIERhdGU6IDIwMTQtMDctMDNcbiAqIGh0dHBzOi8vZ2l0aHViLmNvbS9hdWkvYXJ0RGlhbG9nXG4gKiAoYykgMjAwOS0yMDE0IFRhbmdCaW4sIGh0dHA6Ly93d3cucGxhbmVBcnQuY25cbiAqXG4gKiBUaGlzIGlzIGxpY2Vuc2VkIHVuZGVyIHRoZSBHTlUgTEdQTCwgdmVyc2lvbiAyLjEgb3IgbGF0ZXIuXG4gKiBGb3IgZGV0YWlscywgc2VlOiBodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvbGdwbC0yLjEuaHRtbFxuICovXG4udWktZGlhbG9nIHtcbiAgICAqem9vbToxO1xuICAgIF9mbG9hdDogbGVmdDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0ZGRjtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjOTk5O1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBvdXRsaW5lOiAwO1xuICAgIGJhY2tncm91bmQtY2xpcDogcGFkZGluZy1ib3g7XG4gICAgZm9udC1mYW1pbHk6IEhlbHZldGljYSwgYXJpYWwsIHNhbnMtc2VyaWY7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxLjQyODU3MTQyOTtcbiAgICBjb2xvcjogIzMzMztcbiAgICBvcGFjaXR5OiAwO1xuICAgIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgwKTtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDApO1xuICAgIC13ZWJraXQtdHJhbnNpdGlvbjogLXdlYmtpdC10cmFuc2Zvcm0gLjE1cyBlYXNlLWluLW91dCwgb3BhY2l0eSAuMTVzIGVhc2UtaW4tb3V0O1xuICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAuMTVzIGVhc2UtaW4tb3V0LCBvcGFjaXR5IC4xNXMgZWFzZS1pbi1vdXQ7XG59XG4udWktcG9wdXAtc2hvdyAudWktZGlhbG9nIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgxKTtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEpO1xufVxuLnVpLXBvcHVwLWZvY3VzIC51aS1kaWFsb2cge1xuICAgIGJveC1zaGFkb3c6IDAgMCA4cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xufVxuLnVpLXBvcHVwLW1vZGFsIC51aS1kaWFsb2cge1xuICAgIGJveC1zaGFkb3c6IDAgMCA4cHggcmdiYSgwLCAwLCAwLCAwLjEpLCAwIDAgMjU2cHggcmdiYSgyNTUsIDI1NSwgMjU1LCAuMyk7XG59XG4udWktZGlhbG9nLWdyaWQge1xuICAgIHdpZHRoOiBhdXRvO1xuICAgIG1hcmdpbjogMDtcbiAgICBib3JkZXI6IDAgbm9uZTtcbiAgICBib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7XG4gICAgYm9yZGVyLXNwYWNpbmc6IDA7XG4gICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG59XG4udWktZGlhbG9nLWhlYWRlcixcbi51aS1kaWFsb2ctYm9keSxcbi51aS1kaWFsb2ctZm9vdGVyIHtcbiAgICBwYWRkaW5nOiAwO1xuICAgIGJvcmRlcjogMCBub25lO1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG59XG4udWktZGlhbG9nLWhlYWRlciB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI0U1RTVFNTtcbn1cbi51aS1kaWFsb2ctY2xvc2Uge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBfcG9zaXRpb246IGFic29sdXRlO1xuICAgIGZsb2F0OiByaWdodDtcbiAgICB0b3A6IDEzcHg7XG4gICAgcmlnaHQ6IDEzcHg7XG4gICAgX2hlaWdodDogMjZweDtcbiAgICBwYWRkaW5nOiAwIDRweDtcbiAgICBmb250LXNpemU6IDIxcHg7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgbGluZS1oZWlnaHQ6IDE7XG4gICAgY29sb3I6ICMwMDA7XG4gICAgdGV4dC1zaGFkb3c6IDAgMXB4IDAgI0ZGRjtcbiAgICBvcGFjaXR5OiAuMjtcbiAgICBmaWx0ZXI6IGFscGhhKG9wYWNpdHk9MjApO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgICBfYmFja2dyb3VuZDogI0ZGRjtcbiAgICBib3JkZXI6IDA7XG4gICAgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lO1xufVxuLnVpLWRpYWxvZy1jbG9zZTpob3Zlcixcbi51aS1kaWFsb2ctY2xvc2U6Zm9jdXMge1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgb3V0bGluZTogMDtcbiAgICBvcGFjaXR5OiAwLjU7XG4gICAgZmlsdGVyOiBhbHBoYShvcGFjaXR5PTUwKTtcbn1cbi51aS1kaWFsb2ctdGl0bGUge1xuICAgIG1hcmdpbjogMDtcbiAgICBsaW5lLWhlaWdodDogMS40Mjg1NzE0Mjk7XG4gICAgbWluLWhlaWdodDogMTYuNDI4NTcxNDI5cHg7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICBvdmVyZmxvdzpoaWRkZW47IFxuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgY3Vyc29yOiBkZWZhdWx0O1xufVxuLnVpLWRpYWxvZy1ib2R5IHtcbiAgICBwYWRkaW5nOiAyMHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi51aS1kaWFsb2ctY29udGVudCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuICAgICp6b29tOiAxO1xuICAgICpkaXNwbGF5OiBpbmxpbmU7XG4gICAgdGV4dC1hbGlnbjogbGVmdDtcbn1cbi51aS1kaWFsb2ctZm9vdGVyIHtcbiAgICBwYWRkaW5nOiAwIDIwcHggMjBweCAyMHB4O1xufVxuLnVpLWRpYWxvZy1zdGF0dXNiYXIge1xuICAgIGZsb2F0OiBsZWZ0O1xuICAgIG1hcmdpbi1yaWdodDogMjBweDtcbiAgICBwYWRkaW5nOiA2cHggMDtcbiAgICBsaW5lLWhlaWdodDogMS40Mjg1NzE0Mjk7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGNvbG9yOiAjODg4O1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG59XG4udWktZGlhbG9nLXN0YXR1c2JhciBsYWJlbDpob3ZlciB7XG4gICAgY29sb3I6ICMzMzM7XG59XG4udWktZGlhbG9nLXN0YXR1c2JhciBpbnB1dCxcbi51aS1kaWFsb2ctc3RhdHVzYmFyIC5sYWJlbCB7XG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cbi51aS1kaWFsb2ctYnV0dG9uIHtcbiAgICBmbG9hdDogcmlnaHQ7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbn1cbi51aS1kaWFsb2ctZm9vdGVyIGJ1dHRvbitidXR0b24ge1xuICAgIG1hcmdpbi1ib3R0b206IDA7XG4gICAgbWFyZ2luLWxlZnQ6IDVweDtcbn1cbi51aS1kaWFsb2ctZm9vdGVyIGJ1dHRvbiB7XG4gICAgd2lkdGg6YXV0bztcbiAgICBvdmVyZmxvdzp2aXNpYmxlO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBwYWRkaW5nOiA2cHggMTJweDtcbiAgICBfbWFyZ2luLWxlZnQ6IDVweDtcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgIGxpbmUtaGVpZ2h0OiAxLjQyODU3MTQyOTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBub25lO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICAgICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAgICAgLW1zLXVzZXItc2VsZWN0OiBub25lO1xuICAgICAgIC1vLXVzZXItc2VsZWN0OiBub25lO1xuICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lO1xufVxuXG4udWktZGlhbG9nLWZvb3RlciBidXR0b246Zm9jdXMge1xuICBvdXRsaW5lOiB0aGluIGRvdHRlZCAjMzMzO1xuICBvdXRsaW5lOiA1cHggYXV0byAtd2Via2l0LWZvY3VzLXJpbmctY29sb3I7XG4gIG91dGxpbmUtb2Zmc2V0OiAtMnB4O1xufVxuXG4udWktZGlhbG9nLWZvb3RlciBidXR0b246aG92ZXIsXG4udWktZGlhbG9nLWZvb3RlciBidXR0b246Zm9jdXMge1xuICBjb2xvcjogIzMzMzMzMztcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG4udWktZGlhbG9nLWZvb3RlciBidXR0b246YWN0aXZlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogbm9uZTtcbiAgb3V0bGluZTogMDtcbiAgLXdlYmtpdC1ib3gtc2hhZG93OiBpbnNldCAwIDNweCA1cHggcmdiYSgwLCAwLCAwLCAwLjEyNSk7XG4gICAgICAgICAgYm94LXNoYWRvdzogaW5zZXQgMCAzcHggNXB4IHJnYmEoMCwgMCwgMCwgMC4xMjUpO1xufVxuLnVpLWRpYWxvZy1mb290ZXIgYnV0dG9uW2Rpc2FibGVkXSB7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICBjdXJzb3I6IG5vdC1hbGxvd2VkO1xuICBvcGFjaXR5OiAwLjY1O1xuICBmaWx0ZXI6IGFscGhhKG9wYWNpdHk9NjUpO1xuICAtd2Via2l0LWJveC1zaGFkb3c6IG5vbmU7XG4gICAgICAgICAgYm94LXNoYWRvdzogbm9uZTtcbn1cblxuLnVpLWRpYWxvZy1mb290ZXIgYnV0dG9uIHtcbiAgY29sb3I6ICMzMzMzMzM7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlci1jb2xvcjogI2NjY2NjYztcbn1cblxuLnVpLWRpYWxvZy1mb290ZXIgYnV0dG9uOmhvdmVyLFxuLnVpLWRpYWxvZy1mb290ZXIgYnV0dG9uOmZvY3VzLFxuLnVpLWRpYWxvZy1mb290ZXIgYnV0dG9uOmFjdGl2ZSB7XG4gIGNvbG9yOiAjMzMzMzMzO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWJlYmViO1xuICBib3JkZXItY29sb3I6ICNhZGFkYWQ7XG59XG5cbi51aS1kaWFsb2ctZm9vdGVyIGJ1dHRvbjphY3RpdmV7XG4gIGJhY2tncm91bmQtaW1hZ2U6IG5vbmU7XG59XG5cbi51aS1kaWFsb2ctZm9vdGVyIGJ1dHRvbltkaXNhYmxlZF0sXG4udWktZGlhbG9nLWZvb3RlciBidXR0b25bZGlzYWJsZWRdOmhvdmVyLFxuLnVpLWRpYWxvZy1mb290ZXIgYnV0dG9uW2Rpc2FibGVkXTpmb2N1cyxcbi51aS1kaWFsb2ctZm9vdGVyIGJ1dHRvbltkaXNhYmxlZF06YWN0aXZlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcbiAgYm9yZGVyLWNvbG9yOiAjY2NjY2NjO1xufVxuXG4udWktZGlhbG9nLWZvb3RlciBidXR0b24udWktZGlhbG9nLWF1dG9mb2N1cyB7XG4gIGNvbG9yOiAjZmZmZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDI4YmNhO1xuICBib3JkZXItY29sb3I6ICMzNTdlYmQ7XG59XG5cbi51aS1kaWFsb2ctZm9vdGVyIGJ1dHRvbi51aS1kaWFsb2ctYXV0b2ZvY3VzOmhvdmVyLFxuLnVpLWRpYWxvZy1mb290ZXIgYnV0dG9uLnVpLWRpYWxvZy1hdXRvZm9jdXM6Zm9jdXMsXG4udWktZGlhbG9nLWZvb3RlciBidXR0b24udWktZGlhbG9nLWF1dG9mb2N1czphY3RpdmUge1xuICBjb2xvcjogI2ZmZmZmZjtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzMyNzZiMTtcbiAgYm9yZGVyLWNvbG9yOiAjMjg1ZThlO1xufVxuXG4udWktZGlhbG9nLWZvb3RlciBidXR0b24udWktZGlhbG9nLWF1dG9mb2N1czphY3RpdmUge1xuICBiYWNrZ3JvdW5kLWltYWdlOiBub25lO1xufVxuLnVpLXBvcHVwLXRvcC1sZWZ0IC51aS1kaWFsb2csXG4udWktcG9wdXAtdG9wIC51aS1kaWFsb2csXG4udWktcG9wdXAtdG9wLXJpZ2h0IC51aS1kaWFsb2cge1xuICAgIHRvcDogLThweDtcbn1cbi51aS1wb3B1cC1ib3R0b20tbGVmdCAudWktZGlhbG9nLFxuLnVpLXBvcHVwLWJvdHRvbSAudWktZGlhbG9nLFxuLnVpLXBvcHVwLWJvdHRvbS1yaWdodCAudWktZGlhbG9nIHtcbiAgICB0b3A6IDhweDtcbn1cbi51aS1wb3B1cC1sZWZ0LXRvcCAudWktZGlhbG9nLFxuLnVpLXBvcHVwLWxlZnQgLnVpLWRpYWxvZyxcbi51aS1wb3B1cC1sZWZ0LWJvdHRvbSAudWktZGlhbG9nIHtcbiAgICBsZWZ0OiAtOHB4O1xufVxuLnVpLXBvcHVwLXJpZ2h0LXRvcCAudWktZGlhbG9nLFxuLnVpLXBvcHVwLXJpZ2h0IC51aS1kaWFsb2csXG4udWktcG9wdXAtcmlnaHQtYm90dG9tIC51aS1kaWFsb2cge1xuICAgIGxlZnQ6IDhweDtcbn1cblxuLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLWRpYWxvZy1hcnJvdy1iIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgICB3aWR0aDogMDtcbiAgICBoZWlnaHQ6IDA7XG4gICAgb3ZlcmZsb3c6aGlkZGVuO1xuICAgIF9jb2xvcjojRkYzRkZGO1xuICAgIF9maWx0ZXI6Y2hyb21hKGNvbG9yPSNGRjNGRkYpO1xuICAgIGJvcmRlcjo4cHggZGFzaGVkIHRyYW5zcGFyZW50O1xufVxuLnVpLXBvcHVwLWZvbGxvdyAudWktZGlhbG9nLWFycm93LWEsXG4udWktcG9wdXAtZm9sbG93IC51aS1kaWFsb2ctYXJyb3ctYntcbiAgICBkaXNwbGF5OiBibG9jaztcbn1cbi51aS1wb3B1cC10b3AtbGVmdCAudWktZGlhbG9nLWFycm93LWEsXG4udWktcG9wdXAtdG9wIC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC10b3AtcmlnaHQgLnVpLWRpYWxvZy1hcnJvdy1hIHtcbiAgICBib3R0b206IC0xNnB4O1xuICAgIGJvcmRlci10b3A6OHB4IHNvbGlkICM3QzdDN0M7XG59XG4udWktcG9wdXAtdG9wLWxlZnQgLnVpLWRpYWxvZy1hcnJvdy1iLFxuLnVpLXBvcHVwLXRvcCAudWktZGlhbG9nLWFycm93LWIsXG4udWktcG9wdXAtdG9wLXJpZ2h0IC51aS1kaWFsb2ctYXJyb3ctYiB7XG4gICAgYm90dG9tOiAtMTVweDtcbiAgICBib3JkZXItdG9wOjhweCBzb2xpZCAjZmZmO1xufVxuLnVpLXBvcHVwLXRvcC1sZWZ0IC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC10b3AtbGVmdCAudWktZGlhbG9nLWFycm93LWIgIHtcbiAgICBsZWZ0OiAxNXB4O1xufVxuLnVpLXBvcHVwLXRvcCAudWktZGlhbG9nLWFycm93LWEsXG4udWktcG9wdXAtdG9wIC51aS1kaWFsb2ctYXJyb3ctYiAge1xuICAgIGxlZnQ6IDUwJTtcbiAgICBtYXJnaW4tbGVmdDogLThweDtcbn1cbi51aS1wb3B1cC10b3AtcmlnaHQgLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLXRvcC1yaWdodCAudWktZGlhbG9nLWFycm93LWIge1xuICAgIHJpZ2h0OiAxNXB4O1xufVxuLnVpLXBvcHVwLWJvdHRvbS1sZWZ0IC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC1ib3R0b20gLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLWJvdHRvbS1yaWdodCAudWktZGlhbG9nLWFycm93LWEge1xuICAgIHRvcDogLTE2cHg7XG4gICAgYm9yZGVyLWJvdHRvbTo4cHggc29saWQgIzdDN0M3Qztcbn1cbi51aS1wb3B1cC1ib3R0b20tbGVmdCAudWktZGlhbG9nLWFycm93LWIsXG4udWktcG9wdXAtYm90dG9tIC51aS1kaWFsb2ctYXJyb3ctYixcbi51aS1wb3B1cC1ib3R0b20tcmlnaHQgLnVpLWRpYWxvZy1hcnJvdy1iIHtcbiAgICB0b3A6IC0xNXB4O1xuICAgIGJvcmRlci1ib3R0b206OHB4IHNvbGlkICNmZmY7XG59XG4udWktcG9wdXAtYm90dG9tLWxlZnQgLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLWJvdHRvbS1sZWZ0IC51aS1kaWFsb2ctYXJyb3ctYiB7XG4gICAgbGVmdDogMTVweDtcbn1cbi51aS1wb3B1cC1ib3R0b20gLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLWJvdHRvbSAudWktZGlhbG9nLWFycm93LWIge1xuICAgIG1hcmdpbi1sZWZ0OiAtOHB4O1xuICAgIGxlZnQ6IDUwJTtcbn1cbi51aS1wb3B1cC1ib3R0b20tcmlnaHQgLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLWJvdHRvbS1yaWdodCAudWktZGlhbG9nLWFycm93LWIge1xuICAgIHJpZ2h0OiAxNXB4O1xufVxuLnVpLXBvcHVwLWxlZnQtdG9wIC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC1sZWZ0IC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC1sZWZ0LWJvdHRvbSAudWktZGlhbG9nLWFycm93LWEge1xuICAgIHJpZ2h0OiAtMTZweDtcbiAgICBib3JkZXItbGVmdDo4cHggc29saWQgIzdDN0M3Qztcbn1cbi51aS1wb3B1cC1sZWZ0LXRvcCAudWktZGlhbG9nLWFycm93LWIsXG4udWktcG9wdXAtbGVmdCAudWktZGlhbG9nLWFycm93LWIsXG4udWktcG9wdXAtbGVmdC1ib3R0b20gLnVpLWRpYWxvZy1hcnJvdy1iIHtcbiAgICByaWdodDogLTE1cHg7XG4gICAgYm9yZGVyLWxlZnQ6OHB4IHNvbGlkICNmZmY7XG59XG4udWktcG9wdXAtbGVmdC10b3AgLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLWxlZnQtdG9wIC51aS1kaWFsb2ctYXJyb3ctYiB7XG4gICAgdG9wOiAxNXB4O1xufVxuLnVpLXBvcHVwLWxlZnQgLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLWxlZnQgLnVpLWRpYWxvZy1hcnJvdy1iIHtcbiAgICBtYXJnaW4tdG9wOiAtOHB4O1xuICAgIHRvcDogNTAlO1xufVxuLnVpLXBvcHVwLWxlZnQtYm90dG9tIC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC1sZWZ0LWJvdHRvbSAudWktZGlhbG9nLWFycm93LWIge1xuICAgIGJvdHRvbTogMTVweDtcbn1cbi51aS1wb3B1cC1yaWdodC10b3AgLnVpLWRpYWxvZy1hcnJvdy1hLFxuLnVpLXBvcHVwLXJpZ2h0IC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC1yaWdodC1ib3R0b20gLnVpLWRpYWxvZy1hcnJvdy1hIHtcbiAgICBsZWZ0OiAtMTZweDtcbiAgICBib3JkZXItcmlnaHQ6OHB4IHNvbGlkICM3QzdDN0M7XG59XG4udWktcG9wdXAtcmlnaHQtdG9wIC51aS1kaWFsb2ctYXJyb3ctYixcbi51aS1wb3B1cC1yaWdodCAudWktZGlhbG9nLWFycm93LWIsXG4udWktcG9wdXAtcmlnaHQtYm90dG9tIC51aS1kaWFsb2ctYXJyb3ctYiB7XG4gICAgbGVmdDogLTE1cHg7XG4gICAgYm9yZGVyLXJpZ2h0OjhweCBzb2xpZCAjZmZmO1xufVxuLnVpLXBvcHVwLXJpZ2h0LXRvcCAudWktZGlhbG9nLWFycm93LWEsXG4udWktcG9wdXAtcmlnaHQtdG9wIC51aS1kaWFsb2ctYXJyb3ctYiB7XG4gICAgdG9wOiAxNXB4O1xufVxuLnVpLXBvcHVwLXJpZ2h0IC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC1yaWdodCAudWktZGlhbG9nLWFycm93LWIge1xuICAgIG1hcmdpbi10b3A6IC04cHg7XG4gICAgdG9wOiA1MCU7XG59XG4udWktcG9wdXAtcmlnaHQtYm90dG9tIC51aS1kaWFsb2ctYXJyb3ctYSxcbi51aS1wb3B1cC1yaWdodC1ib3R0b20gLnVpLWRpYWxvZy1hcnJvdy1iIHtcbiAgICBib3R0b206IDE1cHg7XG59XG5cblxuQC13ZWJraXQta2V5ZnJhbWVzIHVpLWRpYWxvZy1sb2FkaW5nIHtcbiAgICAwJSB7XG4gICAgICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7XG4gICAgfVxuICAgIDEwMCUge1xuICAgICAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gICAgfVxufVxuQGtleWZyYW1lcyB1aS1kaWFsb2ctbG9hZGluZyB7XG4gICAgMCUge1xuICAgICAgICB0cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTtcbiAgICB9XG4gICAgMTAwJSB7XG4gICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gICAgfVxufVxuXG4udWktZGlhbG9nLWxvYWRpbmcge1xuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICp6b29tOiAxO1xuICAgICpkaXNwbGF5OiBpbmxpbmU7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB3aWR0aDogMzJweDtcbiAgICBoZWlnaHQ6IDMycHg7XG4gICAgdG9wOiA1MCU7XG4gICAgbWFyZ2luOiAtMTZweCBhdXRvIDAgYXV0bztcbiAgICBmb250LXNpemU6IDA7XG4gICAgdGV4dC1pbmRlbnQ6IC05OTllbTtcbiAgICBjb2xvcjogIzY2Njtcbn1cbi51aS1kaWFsb2ctbG9hZGluZyB7XG4gICAgd2lkdGg6IDEwMCVcXDk7XG4gICAgdGV4dC1pbmRlbnQ6IDBcXDk7XG4gICAgbGluZS1oZWlnaHQ6IDMycHhcXDk7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyXFw5O1xuICAgIGZvbnQtc2l6ZTogMTJweFxcOTtcbn1cblxuLnVpLWRpYWxvZy1sb2FkaW5nOjphZnRlciB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIHdpZHRoOiAzcHg7XG4gICAgaGVpZ2h0OiAzcHg7XG4gICAgbWFyZ2luOiAxNC41cHggMCAwIDE0LjVweDtcbiAgICBib3JkZXItcmFkaXVzOiAxMDAlO1xuICAgIGJveC1zaGFkb3c6IDAgLTEwcHggMCAxcHggI2NjYywgMTBweCAwcHggI2NjYywgMCAxMHB4ICNjY2MsIC0xMHB4IDAgI2NjYywgLTdweCAtN3B4IDAgMC41cHggI2NjYywgN3B4IC03cHggMCAxLjVweCAjY2NjLCA3cHggN3B4ICNjY2MsIC03cHggN3B4ICNjY2M7XG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpO1xuICAgIC13ZWJraXQtYW5pbWF0aW9uOiB1aS1kaWFsb2ctbG9hZGluZyAxLjVzIGluZmluaXRlIGxpbmVhcjtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpO1xuICAgIGFuaW1hdGlvbjogdWktZGlhbG9nLWxvYWRpbmcgMS41cyBpbmZpbml0ZSBsaW5lYXI7XG4gICAgZGlzcGxheTogbm9uZVxcOTtcbn1cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

@@ -1,60 +1,65 @@
+/**
+ *@desc: 通用表单输入元素
+ */
+
+@charset "utf-8";
+
 .input {
+    line-height: 18px;
     padding: 0.5em 0.6em;
-    display: inline-block;
     @include inline-block;
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 3px #eee;
-    border-radius: 4px;
-    outline: none;
-    -webkit-box-sizing: border-box;
+    border-radius: 3px;
+    width: 120px;
+    /* -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-/*
-Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
-since IE8 won't execute CSS that contains a CSS3 selector.
-*/
-input:not([type]) {
-    padding: 0.5em 0.6em;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
-/* May be able to remove this tweak as color inputs become more standardized across browsers. */
-input[type="color"] {
-    padding: 0.2em 0.5em;
-}
-
 .input:focus {
     outline: 0;
-    outline: thin dotted \9; /* IE6-9 */
-    border-color: #129FEA;
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border-color: $color-inp;
+    box-shadow: 0 0 5px lighten($color-inp, 10%);
+    webkit-box-shadow: 0 0 5px lighten($color-inp, 10%);
+    moz-box-shadow: 0 0 5px lighten($color-inp, 10%);
 }
 
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-    outline: thin dotted #333;
-    outline: 1px auto #129FEA;
+/*input 其他状态*/
+.inp-error{
+    border: solid 1px $color-inp-error;
+}
+.inp-error:focus{
+    outline: 0;
+    border-color: $color-inp-error;
+    webkit-box-shadow: 0 0 5px lighten($color-inp-error, 10%);
+    moz-box-shadow: 0 0 5px lighten($color-inp-error, 10%);
+    box-shadow: 0 0 5px lighten($color-inp-error, 10%);
+}
+.inp-suc{
+    border: solid 1px $color-inp-suc;
+}
+.inp-suc:focus{
+    outline: 0;
+    border-color: $color-inp-suc;
+    webkit-box-shadow: 0 0 5px lighten($color-inp-suc, 10%);
+    moz-box-shadow: 0 0 5px lighten($color-inp-suc, 10%);
+    box-shadow: 0 0 5px lighten($color-inp-suc, 10%);
 }
 
-.input-wrap{
-	position: relative;
+/*input 其他大小*/
+.inp-xsmall{
+    width: 60px;
 }
-
-.input{
-	line-height: 18px;
+.inp-small{
+    width: 100px;
+}
+.inp-large{
+    width: 150px;
+}
+.inp-xlarge{
+    width: 200px;
 }

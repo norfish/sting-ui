@@ -101,44 +101,15 @@ mark{
 ins,s,u,del{
     text-decoration:none;
 }
-/* 预设默认链接表现 */
-a{
-    color:#0069ca;
-    text-decoration:none;
-}
-a:hover{
-    color:#f60;
-}
-.rmb{ font-weight:normal; font-size:12px; font-family:arial; }
-.num{ font-family:Tahoma,Simsum; }
-.color01{ color:#ff075b; }
 
-/* 预设清除浮动 */
-#hd,
-#bd,
-#ft,
-.hd,
-.bd,
-.ft,
-.g-clear,
-.g-mod,
-.g-mod .inner,
-.clear{
-    *zoom:1;
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: thin dotted #333;
+    outline: 1px auto #129FEA;
 }
-#hd:after,
-#bd:after,
-#ft:after,
-.hd:after,
-.bd:after,
-.ft:after,
-.g-clear:after,
-.g-mod:after,
-.g-mod .inner:after,
-.clear:after{
-    display:block;
-    overflow:hidden;
-    height:0;
-    clear:both;
-    content:'\0020';
-}
+
+/* Placeholder Color */
+::-moz-placeholder {color: #aaa;}
+::-webkit-input-placeholder {color: #aaa;}
+::-ms-input-placeholder {color:#aaa;}

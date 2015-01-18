@@ -3,8 +3,10 @@
 @import "helper/_variable";
 @import "helper/_mixin";
 
-@import "base/_base";
+@import "base/_reset";
 
 @import "component/_button";
-@import "layout/_form";
+@import "component/_input";
 @import "component/ui-dialog";
+
+@import "layout/_form";
