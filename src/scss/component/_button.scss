@@ -6,7 +6,7 @@
 	padding: 0 15px;
 	height: 32px;
 	line-height: 32px;
-	background-color: $color-default;
+	background-color: $btn-color-default;
 	color: #fff;
 	border: solid 0 transparent;
 	border-radius: $btn-radius;
@@ -44,29 +44,29 @@
 }
 
 .btn-blue, .btn-primary{
-	@include btn-variant($font-color-white, $color-blue, $btn-radius);
+	@include btn-variant($btn-font-color, $color-blue, $btn-radius);
 }
 
 .btn-orange, .btn-buy{
-	@include btn-variant($font-color-white, $color-orange, $btn-radius);
+	@include btn-variant($btn-font-color, $color-orange, $btn-radius);
 }
 
 .btn-teal, .btn-info{
-	@include btn-variant($font-color-white, $color-teal, $btn-radius);
+	@include btn-variant($btn-font-color, $color-teal, $btn-radius);
 }
 
 .btn-green, .btn-success{
-	@include btn-variant($font-color-white, $color-green, $btn-radius);
+	@include btn-variant($btn-font-color, $color-green, $btn-radius);
 }
 
 .btn-green-light{
-	@include btn-variant($font-color-white, $color-green-light, $btn-radius);
+	@include btn-variant($btn-font-color, $color-green-light, $btn-radius);
 }
 
 .btn-red, .btn-danger{
-	@include btn-variant($font-color-white, $color-red, $btn-radius);
+	@include btn-variant($btn-font-color, $color-red, $btn-radius);
 }
 
 .btn-black{
-	@include btn-variant($font-color-white, $color-black, $btn-radius);
+	@include btn-variant($btn-font-color, $color-black, $btn-radius);
 }

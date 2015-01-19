@@ -2,6 +2,13 @@
 $support-old-ie: false !default;
 $lte7: true;
 
+/*global variant*/
+$font-size: 12px !default;
+$font-size-bg: 16px !default;
+$font-size-small: 11px !default;
+$def-radius: 3px !default;
+
+/*常用的颜色默认值*/
 $color-default: #fb6310 !default;
 $color-orange: #ff8500 !default;
 $color-blue: #3b83c0 !default;
@@ -15,10 +22,8 @@ $color-purple: #564f8a !default;
 $color-teal: #02b5ad !default;
 $color-red: #f34540 !default;
 $color-white: #fff !default;
-$font-color-white: #fff !default;
 
-$def-radius: 3px;
-
+/*different status color start*/
 $color-primary-font: #337b92 !default;
 $color-primary-bg: #e9faff !default;
 $color-primary-border: #aad6df !default;
@@ -38,13 +43,14 @@ $color-warn-border: #d9caab !default;
 $color-suc-font: #3c763d !default;
 $color-suc-bg: #eeffe7 !default;
 $color-suc-border: #b7caa7 !default;
+/*different status color end*/
 
+/*button*/
+$btn-color-default: #fb6310 !default;
 $btn-radius: 3px !default;
+$btn-font-color: #fff !default;
 
-$font-size: 14px !default;
-$font-size-bg: 18px !default;
-$font-size-small: 11px !default;
-
+/*input variable*/
 $color-inp: #129fea !default;
 $color-inp-error: #f40 !default;
 $color-inp-suc: #43ba3e !default;

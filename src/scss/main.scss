@@ -1,14 +1,14 @@
 @charset "utf-8";
 
-@import "helper/_variable";
-@import "helper/_mixin";
+@import "helper/variable";
+@import "helper/mixin";
 
-@import "base/_reset";
+@import "base/reset";
 
-@import "component/_button";
-@import "component/_input";
-@import "component/_alert";
-@import "component/_tip";
-@import "component/ui-dialog";
+@import "component/button";
+@import "component/input";
+@import "component/alert";
+@import "component/tip";
+//@import "component/ui-dialog";
 
-@import "layout/_form";
+@import "layout/form";
