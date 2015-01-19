@@ -7,7 +7,7 @@
     *zoom: 1;
 }
 
-/*clearfix placeholder*/
+//clearfix placeholder
 %clearfix {
     *zoom: 1;
     &:after {
@@ -28,7 +28,7 @@
     font-size: calculateRem($size);
 }
 
-/*browser prefix*/
+//browser prefix
 @mixin browser-prefix($name, $args...) {
   @each $browser in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
     #{$browser}#{$name}: $args;
@@ -89,7 +89,7 @@
     opacity: $opacity-val;
 }
 
-/*image replacement*/
+//image replacement
 @mixin hide-text {
     font: 0/0 a;
     text-shadow: none;
