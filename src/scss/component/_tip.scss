@@ -1,0 +1,112 @@
+/**
+ * 
+ */
+
+.tip{
+	@include inline-block;
+	position: relative;
+	margin: 10px;
+
+	.tip-inner{
+		@include inline-block;
+		position: relative;
+		padding: 3px 5px;
+		border: solid 1px $color-error-border;
+		border-radius: 3px;
+		box-shadow: 3px 3px inset #fc0;
+		background: $color-error-bg;
+		min-width: 100px;
+		min-height: 24px;
+		_width: 100px;
+		_height: 24px;
+		-webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    transition: all .3s ease-in-out;
+
+	    .tip-cont{
+	    	line-height: 24px;
+			color: $color-error-font;
+	    	background: $color-error-bg;
+	    	word-wrap: break-word;
+	    	word-break: break-all;
+	    }
+
+		.tip-caret{
+			position: absolute;
+			top: 9px;
+			left: -8px; 
+			border-width: 7px 7px 7px 0;
+			font-size: 0;
+			line-height: 0;
+			border-style: solid;
+			border-color: transparent $color-error-border transparent transparent;
+			/*解决ie6 不支持透明背景*/
+			_border-color: white $color-error-border white white;
+			_filter: chroma(color=white);
+			.caret-inner{
+				position: absolute;
+				top: -7px;
+				left: 1px;
+				font-size: 0;
+				line-height: 0;
+				border-style: solid;
+				border-width: 7px 7px 7px 0;
+				border-color: transparent $color-error-bg transparent transparent;
+				_border-color: white $color-error-border white white; 
+				_filter: chroma(color=white);
+			}
+		}
+	}
+}
+
+.tip-noborder{
+	@include inline-block;
+	position: relative;
+	margin: 10px;
+
+	.tip-inner{
+		@include inline-block;
+		position: relative;
+		padding: 3px 3px 3px 10px;
+		border-radius: 3px;
+		box-shadow: 3px 3px inset #fc0;
+		background: hsl(0, 0%, 22%);
+		min-width: 100px;
+		min-height: 24px;
+		_width: 100px;
+		_height: 24px;
+		-webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    transition: all .3s ease-in-out;
+
+	    .tip-cont{
+	    	line-height: 24px;
+			color: #fff;
+	    	background: hsl(0, 0%, 22%);
+	    	word-wrap: break-word;
+	    	word-break: break-all;
+	    }
+
+		.tip-caret{
+			position: absolute;
+			top: 9px;
+			left: -7px; 
+			border-width: 7px 7px 7px 0;
+			font-size: 0;
+			line-height: 0;
+			border-style: solid;
+			border-color: transparent hsl(0, 0%, 22%) transparent transparent;
+			/*解决ie6 不支持透明背景*/
+			_border-color: white hsl(0, 0%, 22%) white white;
+			_filter: chroma(color=white);
+		}
+	}
+}
+
+.tip-warn{
+	@include tip-variant( $color-warn-font, $color-warn-bg, $color-warn-border, $def-radius);
+}
+
+.tip-suc{
+	@include tip-variant( $color-suc-font, $color-suc-bg, $color-suc-border, $def-radius);
+}

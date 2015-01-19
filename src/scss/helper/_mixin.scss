@@ -73,3 +73,42 @@
     -webkit-transition: opacity .2s ease,color .2s ease,background .2s ease,box-shadow .2s ease;
     transition: opacity .2s ease,color .2s ease,background .2s ease,box-shadow .2s ease;
 }
+
+@mixin tip-variant($color, $bg, $border-color, $radius, $arrow: left, $no-border: false) {
+    @if($no-border == noborder){
+        $border-color: $bg;
+    }
+
+    .tip-inner{
+        border: solid 1px $border-color;
+        box-shadow: 3px 3px inset #fc0;
+        background: $bg;
+
+        .tip-cont{
+            color: $color;
+            background: $bg;
+        }
+
+        .tip-caret{
+            position: absolute;
+            top: 9px;
+            left: -8px; 
+            border-width: 7px 7px 7px 0;
+            border-style: solid;
+            border-color: transparent $border-color transparent transparent;
+            /*解决ie6 不支持透明背景*/
+            _border-color: white $border-color white white;
+            _filter: chroma(color=white);
+            .caret-inner{
+                position: absolute;
+                top: -7px;
+                left: 1px;
+                border-style: solid;
+                border-width: 7px 7px 7px 0;
+                border-color: transparent $bg transparent transparent;
+                _border-color: white $border-color white white; 
+                _filter: chroma(color=white);
+            }
+        }
+    }
+}

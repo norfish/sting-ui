@@ -1,4 +1,8 @@
-﻿# kdiff3 ignore
+﻿#fekit ignore
+build/
+node_modules/
+
+# kdiff3 ignore
 *.orig
 
 # maven ignore
@@ -33,6 +37,3 @@ Thumbs.db
 # *.tar
 # *.tar.gz
 #
-
-#node ignore
-node_modules/
