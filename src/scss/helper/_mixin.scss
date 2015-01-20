@@ -29,6 +29,7 @@
 }
 
 //browser prefix
+//http://css-tricks.com/do-we-need-box-shadow-prefixes/
 @mixin browser-prefix($name, $args...) {
   @each $browser in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
     #{$browser}#{$name}: $args;
