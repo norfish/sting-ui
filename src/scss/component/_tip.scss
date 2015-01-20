@@ -19,9 +19,7 @@
 		min-height: 24px;
 		_width: 100px;
 		_height: 24px;
-		-webkit-transition: all .3s ease-in-out;
-	    -moz-transition: all .3s ease-in-out;
-	    transition: all .3s ease-in-out;
+		@include transition(all .3s ease-in-out);
 
 	    .tip-cont{
 	    	line-height: 24px;
@@ -75,9 +73,7 @@
 		min-height: 24px;
 		_width: 100px;
 		_height: 24px;
-		-webkit-transition: all .3s ease-in-out;
-	    -moz-transition: all .3s ease-in-out;
-	    transition: all .3s ease-in-out;
+		@include transition( all .3s ease-in-out );
 
 	    .tip-cont{
 	    	line-height: 24px;

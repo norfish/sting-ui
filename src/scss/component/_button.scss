@@ -10,7 +10,7 @@
 	color: #fff;
 	border: solid 0 transparent;
 	border-radius: $btn-radius;
-	box-shadow: 2px 2px 3px #eee;
+	@include box-shadow( 2px 2px 3px #eee );
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
@@ -32,8 +32,7 @@
 	color: #fff;
 	text-decoration: none;
 	background-color: #db5700;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-	box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+	@include box-shadow( inset 0 3px 5px rgba(0,0,0,.125) );
 }
 
 .btn:disabled, .btn-dis{

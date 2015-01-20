@@ -9,7 +9,7 @@
     padding: 0.5em 0.6em;
     @include inline-block;
     border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #eee;
+    @include box-shadow( inset 0 1px 3px #eee );
     border-radius: 3px;
     width: 120px;
     /* -webkit-box-sizing: border-box;
@@ -20,7 +20,7 @@
     &:focus{
         outline: 0;
         border-color: $color-inp;
-        @include browser-prefix('box-shadow', 0 0 5px lighten($color-inp, 10%) );
+        @include box-shadow( 0 0 5px lighten($color-inp, 10%) );
     }
 }
 
@@ -30,7 +30,7 @@
     &:focus{
         outline: 0;
         border-color: $color-inp-error;
-        @include browser-prefix('box-shadow', 0 0 5px lighten($color-inp-error, 10%) );
+        @include box-shadow( 0 0 5px lighten($color-inp-error, 10%) );
     }
 }
 
@@ -39,7 +39,7 @@
     &:focus{
         outline: 0;
         border-color: $color-inp-suc;
-        @include browser-prefix('box-shadow', 0 0 5px lighten($color-inp-suc, 10%) );
+        @include box-shadow( 0 0 5px lighten($color-inp-suc, 10%) );
     }
 }
 
