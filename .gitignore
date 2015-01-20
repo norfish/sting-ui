@@ -1,5 +1,4 @@
 ﻿#fekit ignore
-build/
 node_modules/
 
 # kdiff3 ignore

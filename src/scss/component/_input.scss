@@ -15,39 +15,32 @@
     /* -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; */
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
+    @include transition( all .2s ease-in-out );
 
-.input:focus {
-    outline: 0;
-    border-color: $color-inp;
-    box-shadow: 0 0 5px lighten($color-inp, 10%);
-    webkit-box-shadow: 0 0 5px lighten($color-inp, 10%);
-    moz-box-shadow: 0 0 5px lighten($color-inp, 10%);
+    &:focus{
+        outline: 0;
+        border-color: $color-inp;
+        @include browser-prefix('box-shadow', 0 0 5px lighten($color-inp, 10%) );
+    }
 }
 
 /*input 其他状态*/
 .inp-error{
     border: solid 1px $color-inp-error;
+    &:focus{
+        outline: 0;
+        border-color: $color-inp-error;
+        @include browser-prefix('box-shadow', 0 0 5px lighten($color-inp-error, 10%) );
+    }
 }
-.inp-error:focus{
-    outline: 0;
-    border-color: $color-inp-error;
-    webkit-box-shadow: 0 0 5px lighten($color-inp-error, 10%);
-    moz-box-shadow: 0 0 5px lighten($color-inp-error, 10%);
-    box-shadow: 0 0 5px lighten($color-inp-error, 10%);
-}
+
 .inp-suc{
     border: solid 1px $color-inp-suc;
-}
-.inp-suc:focus{
-    outline: 0;
-    border-color: $color-inp-suc;
-    webkit-box-shadow: 0 0 5px lighten($color-inp-suc, 10%);
-    moz-box-shadow: 0 0 5px lighten($color-inp-suc, 10%);
-    box-shadow: 0 0 5px lighten($color-inp-suc, 10%);
+    &:focus{
+        outline: 0;
+        border-color: $color-inp-suc;
+        @include browser-prefix('box-shadow', 0 0 5px lighten($color-inp-suc, 10%) );
+    }
 }
 
 /*input 其他大小*/
