@@ -167,9 +167,62 @@
     @include transform( opacity .2s ease, color .2s ease, background .2s ease, box-shadow .2s ease );
 }
 
+@mixin arrow($outer, $inner, $arrow: left, $no-border: false){
+    @if($no-border == noborder) {
+        $outer : $inner;
+    }
+    @if($arrow == left){
+        $indent : right;
+        $pos: top;
+    } @else if($arrow == right){
+        $indent : left;
+        $pos: top;
+    } @else if($arrow == top){
+        $indent : bottom;
+        $pos: left;
+    } @else if($arrow == bottom){
+        $indent : top;
+        $pos: left;
+    }
+    
+    .tip-caret{
+        position: absolute;
+        #{$pos}: 9px;
+        #{$arrow}: -7px;
+        font-size: 0;
+        line-height: 0;
+
+        i {
+            position: absolute; 
+            overflow: hidden; 
+            width: 0; 
+            height: 0; 
+            font-style: normal;
+            border-width: 7px; 
+            border-style: dashed;
+            border-#{$arrow}-width: 0;
+            border-#{$indent}-style: solid;
+        }
+
+        .caret-outer{
+            position: absolute;
+            #{$arrow}: -1px; 
+            border-color: transparent;
+            border-#{$indent}-color: $outer;
+
+        }
+        .caret-inner{
+            position: absolute;
+            #{$arrow}: 0; 
+            border-color: transparent;
+            border-#{$indent}-color: $inner;
+        }
+    }
+}
+
 //tip
 @mixin tip-variant($color, $bg, $border-color, $radius, $arrow: left, $no-border: false) {
-    @if($no-border= noborder) {
+    @if($no-border == noborder) {
         $border-color: $bg;
     }
     .tip-inner {
@@ -180,27 +233,6 @@
             color: $color;
             background: $bg;
         }
-        .tip-caret {
-            position: absolute;
-            top: 9px;
-            left: -8px;
-            border-width: 7px 7px 7px 0;
-            border-style: solid;
-            border-color: transparent $border-color transparent transparent;
-
-            /*解决ie6 不支持透明背景*/
-            _border-color: white $border-color white white;
-            _filter: chroma(color=white);
-            .caret-inner {
-                position: absolute;
-                top: -7px;
-                left: 1px;
-                border-style: solid;
-                border-width: 7px 7px 7px 0;
-                border-color: transparent $bg transparent transparent;
-                _border-color: white $border-color white white;
-                _filter: chroma(color=white);
-            }
-        }
+        @include arrow($border-color, $bg, $arrow, $no-border);
     }
 }

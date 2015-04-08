@@ -1,0 +1,64 @@
+.ctrl-form{
+	.ctrl-label{
+		width: 90px;
+		text-align: left;
+	}
+	.ctrl-input{
+		*zoom: 1;
+	}
+	.input{
+		*zoom: 1;
+	}
+}
+
+.inp-err-wrap{
+	@include inline-block;
+	position: relative;
+
+	.err-cont{
+		@include inline-block;
+		position: relative;
+		border: solid 1px #ff7c70;
+		border-radius: 3px;
+		box-shadow: 3px 3px inset #fc0;
+		background: #fec9bf;
+		height: 24px;
+		width: 150px;
+		margin-left: 15px;
+		padding: 3px 5px;
+		line-height: 24px;
+		color: #333;
+		-webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    transition: all .3s ease-in-out;
+
+		.err-inner{
+			background: #fec9bf;
+		}
+		.err-caret{
+			position: absolute;
+			top: 9px;
+			left: -8px; 
+			border-width: 7px 7px 7px 0;
+			font-size: 0;
+			line-height: 0;
+			border-style: solid;
+			border-color: transparent #ff7c70 transparent transparent;
+			/*解决ie6 不支持透明背景*/
+			_border-color: white #ff7c70 white white;
+			_filter: chroma(color=white);
+			.caret-inner{
+				position: absolute;
+				top: -7px;
+				left: 1px;
+				font-size: 0;
+				line-height: 0;
+				border-style: solid;
+				border-width: 7px 7px 7px 0;
+				border-color: transparent #fec9bf transparent transparent;
+				_border-color: white #ff7c70 white white; 
+				_filter: chroma(color=white);
+			}
+		}
+	}
+}

@@ -61,7 +61,7 @@ Placeholder.prototype = {
 
     showPH: function(){
         $(this.elem).val(this.msg)
-            .css('color', '#AAA');
+            .css('color', '#aaa');
     },
 
     onShow: function(){
@@ -98,7 +98,7 @@ Placeholder.prototype = {
         return !$(this.elem).val().length;
     },
 
-    _shoulClean: function(){
+    _shouldClean: function(){
         return $(this.elem).attr('placeholder') === $(this.elem).val();
     }
 };

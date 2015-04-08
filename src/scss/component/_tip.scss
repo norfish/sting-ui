@@ -32,28 +32,36 @@
 		.tip-caret{
 			position: absolute;
 			top: 9px;
-			left: -8px; 
-			border-width: 7px 7px 7px 0;
+			left: -7px; 
 			font-size: 0;
 			line-height: 0;
-			border-style: solid;
-			border-color: transparent $color-error-border transparent transparent;
-			/*解决ie6 不支持透明背景*/
-			_border-color: white $color-error-border white white;
-			_filter: chroma(color=white);
+
+			i{
+				position:absolute; 
+				overflow:hidden; 
+				width:0; 
+				height:0; 
+				font-style: normal;
+				border-width:7px; 
+				border-style:dashed;
+			}
+			.caret-outer{
+				position: absolute;
+				left: -1px; 
+				border-left-width: 0;
+            	border-right-style: solid;
+				border-color: transparent $color-error-border transparent transparent;
+			}
+
 			.caret-inner{
 				position: absolute;
-				top: -7px;
-				left: 1px;
-				font-size: 0;
-				line-height: 0;
-				border-style: solid;
-				border-width: 7px 7px 7px 0;
+				left: 0;
+				border-left-width: 0;
+            	border-right-style: solid;
 				border-color: transparent $color-error-bg transparent transparent;
-				_border-color: white $color-error-border white white; 
-				_filter: chroma(color=white);
 			}
 		}
+
 	}
 }
 
@@ -101,6 +109,10 @@
 
 .tip-warn{
 	@include tip-variant( $color-warn-font, $color-warn-bg, $color-warn-border, $def-radius);
+}
+
+.tip-warn-top{
+	@include tip-variant( $color-warn-font, $color-warn-bg, $color-warn-border, $def-radius, top);
 }
 
 .tip-suc{

@@ -45,9 +45,17 @@
     
     // 构造器
     function Qtip(element, options) {
+
+        //element
         this.$element = $(element);
+
+        //options
         this.options = options;
+
+        //
         this.enabled = true;
+
+        //fix title attribute
         this.fixTitle();
     };
     

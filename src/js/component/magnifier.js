@@ -13,7 +13,7 @@
  *@Date 09-11-2013 
  */
 
-;(function($) {
+!function($) {
 	// 'use strict';
 
  	var version = '0.2.4';
@@ -151,4 +151,4 @@
 
  	};
 
-})(jQuery);
+}(jQuery);
